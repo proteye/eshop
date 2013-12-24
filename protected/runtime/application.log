@@ -1,0 +1,90 @@
+2013/12/23 22:00:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Запрашиваемый шаблон вида "index" не найден.' in Z:\home\eshop\framework\web\actions\CViewAction.php:112
+Stack trace:
+#0 Z:\home\eshop\framework\web\actions\CViewAction.php(123): CViewAction->resolveView('index')
+#1 Z:\home\eshop\framework\web\actions\CAction.php(76): CViewAction->run()
+#2 Z:\home\eshop\framework\web\CController.php(308): CAction->runWithParams(Array)
+#3 Z:\home\eshop\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#4 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('page')
+#6 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 Z:\home\eshop\www\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/site/page?view=about
+HTTP_REFERER=http://eshop/site/contact
+---
+2013/12/23 22:00:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Запрашиваемый шаблон вида "index" не найден.' in Z:\home\eshop\framework\web\actions\CViewAction.php:112
+Stack trace:
+#0 Z:\home\eshop\framework\web\actions\CViewAction.php(123): CViewAction->resolveView('index')
+#1 Z:\home\eshop\framework\web\actions\CAction.php(76): CViewAction->run()
+#2 Z:\home\eshop\framework\web\CController.php(308): CAction->runWithParams(Array)
+#3 Z:\home\eshop\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#4 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('page')
+#6 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 Z:\home\eshop\www\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/site/page?view=about
+HTTP_REFERER=http://eshop/site/login
+---
+2013/12/23 22:00:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Запрашиваемый шаблон вида "index" не найден.' in Z:\home\eshop\framework\web\actions\CViewAction.php:112
+Stack trace:
+#0 Z:\home\eshop\framework\web\actions\CViewAction.php(123): CViewAction->resolveView('index')
+#1 Z:\home\eshop\framework\web\actions\CAction.php(76): CViewAction->run()
+#2 Z:\home\eshop\framework\web\CController.php(308): CAction->runWithParams(Array)
+#3 Z:\home\eshop\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#4 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('page')
+#6 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 Z:\home\eshop\www\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/site/page?view=about
+HTTP_REFERER=http://eshop/site/index
+---
+2013/12/23 22:01:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Запрашиваемый шаблон вида "index" не найден.' in Z:\home\eshop\framework\web\actions\CViewAction.php:112
+Stack trace:
+#0 Z:\home\eshop\framework\web\actions\CViewAction.php(123): CViewAction->resolveView('index')
+#1 Z:\home\eshop\framework\web\actions\CAction.php(76): CViewAction->run()
+#2 Z:\home\eshop\framework\web\CController.php(308): CAction->runWithParams(Array)
+#3 Z:\home\eshop\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#4 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('page')
+#6 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 Z:\home\eshop\www\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/site/page?view=about
+HTTP_REFERER=http://eshop/site/index
+---
+2013/12/23 22:01:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Запрашиваемый шаблон вида "index" не найден.' in Z:\home\eshop\framework\web\actions\CViewAction.php:112
+Stack trace:
+#0 Z:\home\eshop\framework\web\actions\CViewAction.php(123): CViewAction->resolveView('index')
+#1 Z:\home\eshop\framework\web\actions\CAction.php(76): CViewAction->run()
+#2 Z:\home\eshop\framework\web\CController.php(308): CAction->runWithParams(Array)
+#3 Z:\home\eshop\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#4 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('page')
+#6 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 Z:\home\eshop\www\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/site/page?view=about
+HTTP_REFERER=http://eshop/site/contact
+---
+2013/12/23 22:01:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Запрашиваемый шаблон вида "index" не найден.' in Z:\home\eshop\framework\web\actions\CViewAction.php:112
+Stack trace:
+#0 Z:\home\eshop\framework\web\actions\CViewAction.php(123): CViewAction->resolveView('index')
+#1 Z:\home\eshop\framework\web\actions\CAction.php(76): CViewAction->run()
+#2 Z:\home\eshop\framework\web\CController.php(308): CAction->runWithParams(Array)
+#3 Z:\home\eshop\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#4 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('page')
+#6 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 Z:\home\eshop\www\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/site/page?view=about
+HTTP_REFERER=http://eshop/site/index
+---
