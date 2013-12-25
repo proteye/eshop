@@ -27,11 +27,32 @@ class SiteController extends Controller
 	 */
 	public function actionIndex()
 	{
-		// renders the view file 'protected/views/site/index.php'
-		// using the default layout 'protected/views/layouts/main.php'
-		$this->render('index');
+            // renders the view file 'protected/views/site/index.php'
+            // using the default layout 'protected/views/layouts/main.php'
+            
+            $this->render('index');
 	}
 
+	/**
+	 * Action для вывода товаров, категорий, страниц
+	 */
+	public function actionCategory($catg, $id)
+	{
+            if ($catg === 'product') {
+                $model = Product::model()->findByPk($id);
+                $this->render('product', array('model' => $model));
+
+            }
+            elseif ($catg === 'category') {
+                $model = Category::model()->findByPk($id);
+                $this->render('category', array('model' => $model));
+            }
+            elseif ($catg === 'page') {
+                $model = Page::model()->findByPk($id);
+                $this->render('page', array('model' => $model));
+            }
+	}
+        
 	/**
 	 * This is the action to handle external exceptions.
 	 */
