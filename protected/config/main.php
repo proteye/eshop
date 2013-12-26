@@ -34,7 +34,14 @@ return array(
 
 	// application components
 	'components'=>array(
+                'authManager' => array(
+                    // Будем использовать свой менеджер авторизации
+                    'class' => 'PhpAuthManager',
+                    // Роль по умолчанию. Все, кто не админы, модераторы и юзеры — гости.
+                    'defaultRoles' => array('guest'),
+                ),
 		'user'=>array(
+                        'class' => 'WebUser',
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,
 		),
@@ -44,15 +51,15 @@ return array(
 			'urlFormat'=>'path',
 			'rules'=>array(
                                 ''=>'site/index',
-                                '<action:(login|logout|about)>' => 'site/<action>',
-                                '<controller:\w+>/<id:\d+>'=>'<controller>/view',
-				'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
-				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
+                                '<action:(login|logout|catalog)>' => 'site/<action>',
                                 // своё правило для URL
                                 array(
                                     'class' => 'application.components.SiteUrlRule',
                                     'connectionID' => 'db',
                                 ),
+                                '<controller:\w+>/<id:\d+>'=>'<controller>/view',
+				'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
+				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
 			),
                         'showScriptName'=>false,
                         

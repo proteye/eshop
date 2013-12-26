@@ -17,6 +17,12 @@
  */
 class User extends CActiveRecord
 {
+        const SALT = 'ad5lu9$er@7h';
+        const ROLE_ADMIN = 'admin';
+        const ROLE_MODER = 'moderator';
+        const ROLE_USER = 'user';
+        const ROLE_BANNED = 'banned';
+        
 	/**
 	 * @return string the associated database table name
 	 */
@@ -50,6 +56,7 @@ class User extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
+                    'role' => array(self::BELONGS_TO, 'Role', 'role_id')
 		);
 	}
 
@@ -116,4 +123,15 @@ class User extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+        
+        protected function beforeSave()
+        {
+                if ($this->isNewRecord) {
+                    $this->created = time();
+                }
+                
+                $this->password = md5(SALT . $this->password);
+                
+                return parent::beforeSave();
+        }
 }

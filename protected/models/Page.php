@@ -125,4 +125,23 @@ class Page extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+        
+        // Формирование массива списка Категорий для CMenu.
+	public static function menu()
+	{
+            $model = self::model()->findAllByAttributes(array('parent_id' => 0, 'status' => 1));
+            $array = array();
+            
+            $array[] = array('label'=>'Каталог', 'url'=>array('catalog'), 'active' => ('catalog' === Yii::app()->request->pathInfo));
+            foreach ($model as $item) {
+                $active = ($item->full_url === Yii::app()->request->pathInfo);
+                $array[] = array('label'=>$item->title, 'url'=>array('site/categ', 'full_url' => $item->full_url), 'active' => $active);
+            }
+            $array[] = array('label'=>'Вход', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest);
+            $array[] = array('label'=>'Выход ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest);
+            if (Yii::app()->user->checkAccess('admin'))
+                $array[] = array('label'=>'Админка', 'url'=>array('/admin'));
+            
+            return $array;
+	}
 }

@@ -1135,3 +1135,1966 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/assets/b8a5ac11/contents.css
 ---
+2013/12/26 15:41:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "qwe".' in Z:\home\eshop\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('qwe')
+#1 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\eshop\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/qwe
+---
+2013/12/26 15:41:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "irrigator".' in Z:\home\eshop\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('irrigator')
+#1 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\eshop\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/irrigator
+---
+2013/12/26 15:41:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "вщыефмлф".' in Z:\home\eshop\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('???????????????...')
+#1 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\eshop\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/%D0%B2%D1%89%D1%8B%D0%B5%D1%84%D0%BC%D0%BB%D1%84
+---
+2013/12/26 15:56:21 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Некорректный запрос.' in Z:\home\eshop\framework\web\CController.php:336
+Stack trace:
+#0 Z:\home\eshop\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 Z:\home\eshop\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('page')
+#4 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#5 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 Z:\home\eshop\www\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/site/page
+HTTP_REFERER=http://eshop/dostavka
+---
+2013/12/26 15:58:14 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Некорректный запрос.' in Z:\home\eshop\framework\web\CController.php:336
+Stack trace:
+#0 Z:\home\eshop\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 Z:\home\eshop\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('page')
+#4 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#5 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 Z:\home\eshop\www\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/site/page?full_url=dostavka
+HTTP_REFERER=http://eshop/dostavka
+---
+2013/12/26 16:02:52 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Некорректный запрос.' in Z:\home\eshop\framework\web\CController.php:336
+Stack trace:
+#0 Z:\home\eshop\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 Z:\home\eshop\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('page')
+#4 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#5 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 Z:\home\eshop\www\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/site/page?full_url=dostavka
+HTTP_REFERER=http://eshop/dostavka
+---
+2013/12/26 16:05:11 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Некорректный запрос.' in Z:\home\eshop\framework\web\CController.php:336
+Stack trace:
+#0 Z:\home\eshop\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 Z:\home\eshop\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('page')
+#4 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#5 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 Z:\home\eshop\www\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/site/page?view=about
+HTTP_REFERER=http://eshop/dostavka
+---
+2013/12/26 16:05:18 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Некорректный запрос.' in Z:\home\eshop\framework\web\CController.php:336
+Stack trace:
+#0 Z:\home\eshop\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 Z:\home\eshop\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('page')
+#4 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#5 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 Z:\home\eshop\www\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/site/page?view=about
+HTTP_REFERER=http://eshop/
+---
+2013/12/26 16:05:24 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Некорректный запрос.' in Z:\home\eshop\framework\web\CController.php:336
+Stack trace:
+#0 Z:\home\eshop\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 Z:\home\eshop\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('page')
+#4 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#5 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 Z:\home\eshop\www\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/site/page?view=about
+HTTP_REFERER=http://eshop/dostavka
+---
+2013/12/26 16:07:43 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Некорректный запрос.' in Z:\home\eshop\framework\web\CController.php:336
+Stack trace:
+#0 Z:\home\eshop\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 Z:\home\eshop\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('page')
+#4 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#5 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 Z:\home\eshop\www\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/site/page?view=about
+HTTP_REFERER=http://eshop/dostavka
+---
+2013/12/26 16:19:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "about".' in Z:\home\eshop\framework\web\CController.php:483
+Stack trace:
+#0 Z:\home\eshop\framework\web\CController.php(270): CController->missingAction('about')
+#1 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('about')
+#2 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('site/about')
+#3 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 Z:\home\eshop\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/about
+---
+2013/12/26 16:19:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "hello".' in Z:\home\eshop\framework\web\CController.php:483
+Stack trace:
+#0 Z:\home\eshop\framework\web\CController.php(270): CController->missingAction('hello')
+#1 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('hello')
+#2 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('site/hello')
+#3 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 Z:\home\eshop\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/dostavka
+---
+2013/12/26 16:20:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "hello".' in Z:\home\eshop\framework\web\CController.php:483
+Stack trace:
+#0 Z:\home\eshop\framework\web\CController.php(270): CController->missingAction('hello')
+#1 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('hello')
+#2 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('site/hello')
+#3 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 Z:\home\eshop\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/dostavka
+---
+2013/12/26 16:20:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "hello".' in Z:\home\eshop\framework\web\CController.php:483
+Stack trace:
+#0 Z:\home\eshop\framework\web\CController.php(270): CController->missingAction('hello')
+#1 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('hello')
+#2 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('site/hello')
+#3 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 Z:\home\eshop\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/dostavkaa
+---
+2013/12/26 16:20:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "hello".' in Z:\home\eshop\framework\web\CController.php:483
+Stack trace:
+#0 Z:\home\eshop\framework\web\CController.php(270): CController->missingAction('hello')
+#1 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('hello')
+#2 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('site/hello')
+#3 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 Z:\home\eshop\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/dostavkcaa
+---
+2013/12/26 16:20:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "hello".' in Z:\home\eshop\framework\web\CController.php:483
+Stack trace:
+#0 Z:\home\eshop\framework\web\CController.php(270): CController->missingAction('hello')
+#1 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('hello')
+#2 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('site/hello')
+#3 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 Z:\home\eshop\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/dostacaa
+---
+2013/12/26 16:20:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "dostacaa".' in Z:\home\eshop\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('dostacaa')
+#1 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\eshop\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/dostacaa
+---
+2013/12/26 16:21:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "hello".' in Z:\home\eshop\framework\web\CController.php:483
+Stack trace:
+#0 Z:\home\eshop\framework\web\CController.php(270): CController->missingAction('hello')
+#1 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('hello')
+#2 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('site/hello')
+#3 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 Z:\home\eshop\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/dostavka
+---
+2013/12/26 16:21:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "hello".' in Z:\home\eshop\framework\web\CController.php:483
+Stack trace:
+#0 Z:\home\eshop\framework\web\CController.php(270): CController->missingAction('hello')
+#1 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('hello')
+#2 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('site/hello')
+#3 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 Z:\home\eshop\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/dostavkaa
+---
+2013/12/26 16:22:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "dostavakaa".' in Z:\home\eshop\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('dostavakaa')
+#1 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\eshop\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/dostavakaa
+---
+2013/12/26 16:22:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "dostavakaa".' in Z:\home\eshop\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('dostavakaa')
+#1 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\eshop\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/dostavakaa
+---
+2013/12/26 16:22:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "hello".' in Z:\home\eshop\framework\web\CController.php:483
+Stack trace:
+#0 Z:\home\eshop\framework\web\CController.php(270): CController->missingAction('hello')
+#1 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('hello')
+#2 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('site/hello')
+#3 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 Z:\home\eshop\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/dostavka
+---
+2013/12/26 16:22:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "dostavka".' in Z:\home\eshop\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('dostavka')
+#1 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\eshop\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/dostavka
+---
+2013/12/26 16:23:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "false".' in Z:\home\eshop\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('false')
+#1 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\eshop\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gii
+---
+2013/12/26 16:26:22 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Некорректный запрос.' in Z:\home\eshop\framework\web\CController.php:336
+Stack trace:
+#0 Z:\home\eshop\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 Z:\home\eshop\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('categ')
+#4 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('site/categ')
+#5 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 Z:\home\eshop\www\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/site/categ?0%5Bfull_url%5D=dostavka
+HTTP_REFERER=http://eshop/dostavka
+---
+2013/12/26 16:26:47 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Некорректный запрос.' in Z:\home\eshop\framework\web\CController.php:336
+Stack trace:
+#0 Z:\home\eshop\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 Z:\home\eshop\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('categ')
+#4 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('site/categ')
+#5 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 Z:\home\eshop\www\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/site/categ?full_urla=dostavka
+HTTP_REFERER=http://eshop/dostavka
+---
+2013/12/26 16:28:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "massazhnyye-kresla/massazhnoye-kreslo-yamaguchi-ya-6000-axioma".' in Z:\home\eshop\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('massazhnyye-kre...')
+#1 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\eshop\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/massazhnyye-kresla/massazhnoye-kreslo-yamaguchi-ya-6000-axioma
+HTTP_REFERER=http://eshop/dostavka
+---
+2013/12/26 21:26:50 [error] [exception.CDbException] exception 'CDbException' with message 'Таблица "esp_category" не содержит столбца "parent".' in Z:\home\eshop\framework\db\schema\CDbCommandBuilder.php:694
+Stack trace:
+#0 Z:\home\eshop\framework\db\ar\CActiveRecord.php(1535): CDbCommandBuilder->createColumnCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#1 Z:\home\eshop\www\protected\models\Category.php(132): CActiveRecord->findAllByAttributes(Array)
+#2 Z:\home\eshop\www\protected\views\layouts\main.php(32): Category::menu()
+#3 Z:\home\eshop\framework\web\CBaseController.php(126): require('Z:\home\eshop\w...')
+#4 Z:\home\eshop\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\eshop\w...', Array, true)
+#5 Z:\home\eshop\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('Z:\home\eshop\w...', Array, true)
+#6 Z:\home\eshop\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#7 Z:\home\eshop\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#8 Z:\home\eshop\framework\web\CBaseController.php(206): COutputProcessor->run()
+#9 Z:\home\eshop\framework\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#10 Z:\home\eshop\www\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#11 Z:\home\eshop\framework\web\CBaseController.php(126): require('Z:\home\eshop\w...')
+#12 Z:\home\eshop\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\eshop\w...', Array, true)
+#13 Z:\home\eshop\framework\web\CController.php(784): CBaseController->renderFile('Z:\home\eshop\w...', Array, true)
+#14 Z:\home\eshop\www\protected\controllers\SiteController.php(52): CController->render('page', Array)
+#15 [internal function]: SiteController->actionCateg('page', '1')
+#16 Z:\home\eshop\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(SiteController), Array)
+#17 Z:\home\eshop\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SiteController), Object(ReflectionMethod), Array)
+#18 Z:\home\eshop\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#19 Z:\home\eshop\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#20 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('categ')
+#22 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('site/categ')
+#23 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#24 Z:\home\eshop\www\index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/dostavka
+HTTP_REFERER=http://eshop/massazhnyye-kresla/massazhnoye-kreslo-yamaguchi-ya-6000-axiom
+---
+2013/12/26 21:29:05 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "CMenu.0".' in Z:\home\eshop\framework\base\CComponent.php:173
+Stack trace:
+#0 Z:\home\eshop\framework\web\CWidgetFactory.php(161): CComponent->__set('0', Array)
+#1 Z:\home\eshop\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'zii.widgets.CMe...', Array)
+#2 Z:\home\eshop\framework\web\CBaseController.php(172): CBaseController->createWidget('zii.widgets.CMe...', Array)
+#3 Z:\home\eshop\www\protected\views\layouts\main.php(38): CBaseController->widget('zii.widgets.CMe...', Array)
+#4 Z:\home\eshop\framework\web\CBaseController.php(126): require('Z:\home\eshop\w...')
+#5 Z:\home\eshop\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\eshop\w...', Array, true)
+#6 Z:\home\eshop\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('Z:\home\eshop\w...', Array, true)
+#7 Z:\home\eshop\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#8 Z:\home\eshop\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#9 Z:\home\eshop\framework\web\CBaseController.php(206): COutputProcessor->run()
+#10 Z:\home\eshop\framework\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#11 Z:\home\eshop\www\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#12 Z:\home\eshop\framework\web\CBaseController.php(126): require('Z:\home\eshop\w...')
+#13 Z:\home\eshop\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\eshop\w...', Array, true)
+#14 Z:\home\eshop\framework\web\CController.php(784): CBaseController->renderFile('Z:\home\eshop\w...', Array, true)
+#15 Z:\home\eshop\www\protected\controllers\SiteController.php(48): CController->render('category', Array)
+#16 [internal function]: SiteController->actionCateg('category', '1')
+#17 Z:\home\eshop\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(SiteController), Array)
+#18 Z:\home\eshop\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SiteController), Object(ReflectionMethod), Array)
+#19 Z:\home\eshop\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#20 Z:\home\eshop\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#21 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('categ')
+#23 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('site/categ')
+#24 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#25 Z:\home\eshop\www\index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/massazhnyye-kresla
+HTTP_REFERER=http://eshop/irrigatory
+---
+2013/12/26 22:23:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/46cdb297/contents.css".' in Z:\home\eshop\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/46cdb297...')
+#1 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\eshop\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/46cdb297/contents.css
+---
+2013/12/26 22:32:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "catalog".' in Z:\home\eshop\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('catalog')
+#1 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\eshop\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/catalog
+---
+2013/12/26 23:05:15 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "User.realName".' in Z:\home\eshop\framework\base\CComponent.php:130
+Stack trace:
+#0 Z:\home\eshop\framework\db\ar\CActiveRecord.php(145): CComponent->__get('realName')
+#1 Z:\home\eshop\www\protected\components\UserIdentity.php(31): CActiveRecord->__get('realName')
+#2 Z:\home\eshop\www\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#3 Z:\home\eshop\framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#4 Z:\home\eshop\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#5 Z:\home\eshop\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#6 Z:\home\eshop\www\protected\controllers\SiteController.php(120): CModel->validate()
+#7 Z:\home\eshop\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#8 Z:\home\eshop\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 Z:\home\eshop\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('login')
+#12 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#13 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 Z:\home\eshop\www\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/login
+HTTP_REFERER=http://eshop/login
+---
+2013/12/26 23:05:39 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'У вас недостаточно прав для выполнения указанного действия.' in Z:\home\eshop\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 Z:\home\eshop\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), '?? ?????? ?????...')
+#1 Z:\home\eshop\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 Z:\home\eshop\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 Z:\home\eshop\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 Z:\home\eshop\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 Z:\home\eshop\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/user/admi...')
+#9 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\eshop\www\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/user/admin
+HTTP_REFERER=http://eshop/login
+---
+2013/12/26 23:05:53 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'У вас недостаточно прав для выполнения указанного действия.' in Z:\home\eshop\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 Z:\home\eshop\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), '?? ?????? ?????...')
+#1 Z:\home\eshop\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 Z:\home\eshop\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 Z:\home\eshop\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 Z:\home\eshop\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 Z:\home\eshop\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/user/admi...')
+#9 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\eshop\www\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/user/admin
+HTTP_REFERER=http://eshop/login
+---
+2013/12/26 23:06:24 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'У вас недостаточно прав для выполнения указанного действия.' in Z:\home\eshop\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 Z:\home\eshop\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), '?? ?????? ?????...')
+#1 Z:\home\eshop\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 Z:\home\eshop\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 Z:\home\eshop\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 Z:\home\eshop\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 Z:\home\eshop\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/user/admi...')
+#9 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\eshop\www\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/user/admin
+HTTP_REFERER=http://eshop/login
+---
+2013/12/26 23:06:25 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'У вас недостаточно прав для выполнения указанного действия.' in Z:\home\eshop\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 Z:\home\eshop\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), '?? ?????? ?????...')
+#1 Z:\home\eshop\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 Z:\home\eshop\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 Z:\home\eshop\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 Z:\home\eshop\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 Z:\home\eshop\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/user/admi...')
+#9 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\eshop\www\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/user/admin
+HTTP_REFERER=http://eshop/login
+---
+2013/12/26 23:06:32 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'У вас недостаточно прав для выполнения указанного действия.' in Z:\home\eshop\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 Z:\home\eshop\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), '?? ?????? ?????...')
+#1 Z:\home\eshop\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 Z:\home\eshop\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 Z:\home\eshop\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 Z:\home\eshop\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 Z:\home\eshop\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/user/admi...')
+#9 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\eshop\www\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/user/admin
+HTTP_REFERER=http://eshop/login
+---
+2013/12/26 23:06:45 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'У вас недостаточно прав для выполнения указанного действия.' in Z:\home\eshop\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 Z:\home\eshop\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), '?? ?????? ?????...')
+#1 Z:\home\eshop\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 Z:\home\eshop\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 Z:\home\eshop\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 Z:\home\eshop\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 Z:\home\eshop\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/user/admi...')
+#9 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\eshop\www\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/user/admin
+HTTP_REFERER=http://eshop/admin/user
+---
+2013/12/26 23:08:19 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'У вас недостаточно прав для выполнения указанного действия.' in Z:\home\eshop\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 Z:\home\eshop\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), '?? ?????? ?????...')
+#1 Z:\home\eshop\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 Z:\home\eshop\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 Z:\home\eshop\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 Z:\home\eshop\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 Z:\home\eshop\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/user/admi...')
+#9 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\eshop\www\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/user/admin
+HTTP_REFERER=http://eshop/admin/user
+---
+2013/12/26 23:08:20 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'У вас недостаточно прав для выполнения указанного действия.' in Z:\home\eshop\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 Z:\home\eshop\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), '?? ?????? ?????...')
+#1 Z:\home\eshop\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 Z:\home\eshop\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 Z:\home\eshop\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 Z:\home\eshop\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 Z:\home\eshop\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/user/admi...')
+#9 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\eshop\www\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/user/admin
+HTTP_REFERER=http://eshop/admin/user
+---
+2013/12/26 23:09:14 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'У вас недостаточно прав для выполнения указанного действия.' in Z:\home\eshop\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 Z:\home\eshop\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), '?? ?????? ?????...')
+#1 Z:\home\eshop\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 Z:\home\eshop\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 Z:\home\eshop\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 Z:\home\eshop\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 Z:\home\eshop\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/user/admi...')
+#9 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\eshop\www\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/user/admin
+HTTP_REFERER=http://eshop/admin/user
+---
+2013/12/26 23:09:16 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'У вас недостаточно прав для выполнения указанного действия.' in Z:\home\eshop\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 Z:\home\eshop\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), '?? ?????? ?????...')
+#1 Z:\home\eshop\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 Z:\home\eshop\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 Z:\home\eshop\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 Z:\home\eshop\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 Z:\home\eshop\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/user/admi...')
+#9 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\eshop\www\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/user/admin
+HTTP_REFERER=http://eshop/admin/user
+---
+2013/12/26 23:09:24 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'У вас недостаточно прав для выполнения указанного действия.' in Z:\home\eshop\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 Z:\home\eshop\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), '?? ?????? ?????...')
+#1 Z:\home\eshop\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 Z:\home\eshop\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 Z:\home\eshop\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 Z:\home\eshop\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 Z:\home\eshop\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/user/admi...')
+#9 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\eshop\www\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/user/admin
+HTTP_REFERER=http://eshop/admin/user
+---
+2013/12/26 23:11:37 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'У вас недостаточно прав для выполнения указанного действия.' in Z:\home\eshop\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 Z:\home\eshop\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), '?? ?????? ?????...')
+#1 Z:\home\eshop\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 Z:\home\eshop\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 Z:\home\eshop\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 Z:\home\eshop\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 Z:\home\eshop\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/user/admi...')
+#9 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\eshop\www\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/user/admin
+HTTP_REFERER=http://eshop/admin/user/create
+---
+2013/12/26 23:11:41 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'У вас недостаточно прав для выполнения указанного действия.' in Z:\home\eshop\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 Z:\home\eshop\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), '?? ?????? ?????...')
+#1 Z:\home\eshop\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 Z:\home\eshop\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 Z:\home\eshop\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 Z:\home\eshop\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 Z:\home\eshop\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/user/admi...')
+#9 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\eshop\www\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/user/admin
+HTTP_REFERER=http://eshop/admin/user/create
+---
+2013/12/26 23:11:42 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'У вас недостаточно прав для выполнения указанного действия.' in Z:\home\eshop\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 Z:\home\eshop\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), '?? ?????? ?????...')
+#1 Z:\home\eshop\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 Z:\home\eshop\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 Z:\home\eshop\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 Z:\home\eshop\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 Z:\home\eshop\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/user/admi...')
+#9 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\eshop\www\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/user/admin
+HTTP_REFERER=http://eshop/admin/user/create
+---
+2013/12/26 23:11:42 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'У вас недостаточно прав для выполнения указанного действия.' in Z:\home\eshop\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 Z:\home\eshop\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), '?? ?????? ?????...')
+#1 Z:\home\eshop\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 Z:\home\eshop\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 Z:\home\eshop\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 Z:\home\eshop\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 Z:\home\eshop\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/user/admi...')
+#9 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\eshop\www\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/user/admin
+HTTP_REFERER=http://eshop/admin/user/create
+---
+2013/12/26 23:11:42 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'У вас недостаточно прав для выполнения указанного действия.' in Z:\home\eshop\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 Z:\home\eshop\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), '?? ?????? ?????...')
+#1 Z:\home\eshop\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 Z:\home\eshop\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 Z:\home\eshop\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 Z:\home\eshop\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 Z:\home\eshop\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/user/admi...')
+#9 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\eshop\www\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/user/admin
+HTTP_REFERER=http://eshop/admin/user/create
+---
+2013/12/26 23:11:42 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'У вас недостаточно прав для выполнения указанного действия.' in Z:\home\eshop\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 Z:\home\eshop\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), '?? ?????? ?????...')
+#1 Z:\home\eshop\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 Z:\home\eshop\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 Z:\home\eshop\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 Z:\home\eshop\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 Z:\home\eshop\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/user/admi...')
+#9 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\eshop\www\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/user/admin
+HTTP_REFERER=http://eshop/admin/user/create
+---
+2013/12/26 23:12:11 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'У вас недостаточно прав для выполнения указанного действия.' in Z:\home\eshop\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 Z:\home\eshop\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), '?? ?????? ?????...')
+#1 Z:\home\eshop\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 Z:\home\eshop\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 Z:\home\eshop\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 Z:\home\eshop\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 Z:\home\eshop\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/user/admi...')
+#9 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\eshop\www\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/user/admin
+HTTP_REFERER=http://eshop/admin/user/create
+---
+2013/12/26 23:12:13 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'У вас недостаточно прав для выполнения указанного действия.' in Z:\home\eshop\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 Z:\home\eshop\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), '?? ?????? ?????...')
+#1 Z:\home\eshop\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 Z:\home\eshop\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 Z:\home\eshop\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 Z:\home\eshop\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 Z:\home\eshop\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/user/admi...')
+#9 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\eshop\www\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/user/admin
+HTTP_REFERER=http://eshop/admin/user/create
+---
+2013/12/26 23:13:36 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'У вас недостаточно прав для выполнения указанного действия.' in Z:\home\eshop\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 Z:\home\eshop\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), '?? ?????? ?????...')
+#1 Z:\home\eshop\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 Z:\home\eshop\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 Z:\home\eshop\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 Z:\home\eshop\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 Z:\home\eshop\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/user/admi...')
+#9 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\eshop\www\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/user/admin
+HTTP_REFERER=http://eshop/login
+---
+2013/12/26 23:13:42 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'У вас недостаточно прав для выполнения указанного действия.' in Z:\home\eshop\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 Z:\home\eshop\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), '?? ?????? ?????...')
+#1 Z:\home\eshop\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 Z:\home\eshop\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 Z:\home\eshop\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 Z:\home\eshop\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 Z:\home\eshop\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/user/admi...')
+#9 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\eshop\www\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/user/admin
+HTTP_REFERER=http://eshop/admin/user/
+---
+2013/12/26 23:13:57 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'У вас недостаточно прав для выполнения указанного действия.' in Z:\home\eshop\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 Z:\home\eshop\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), '?? ?????? ?????...')
+#1 Z:\home\eshop\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 Z:\home\eshop\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 Z:\home\eshop\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 Z:\home\eshop\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 Z:\home\eshop\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/user/admi...')
+#9 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\eshop\www\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/user/admin
+HTTP_REFERER=http://eshop/admin/user/create
+---
+2013/12/26 23:14:47 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'У вас недостаточно прав для выполнения указанного действия.' in Z:\home\eshop\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 Z:\home\eshop\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), '?? ?????? ?????...')
+#1 Z:\home\eshop\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 Z:\home\eshop\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 Z:\home\eshop\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 Z:\home\eshop\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 Z:\home\eshop\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/user/admi...')
+#9 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\eshop\www\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/user/admin
+HTTP_REFERER=http://eshop/admin/user/create
+---
+2013/12/26 23:14:48 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'У вас недостаточно прав для выполнения указанного действия.' in Z:\home\eshop\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 Z:\home\eshop\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), '?? ?????? ?????...')
+#1 Z:\home\eshop\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 Z:\home\eshop\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 Z:\home\eshop\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 Z:\home\eshop\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 Z:\home\eshop\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/user/admi...')
+#9 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\eshop\www\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/user/admin
+HTTP_REFERER=http://eshop/admin/user/create
+---
+2013/12/26 23:14:51 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'У вас недостаточно прав для выполнения указанного действия.' in Z:\home\eshop\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 Z:\home\eshop\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), '?? ?????? ?????...')
+#1 Z:\home\eshop\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 Z:\home\eshop\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 Z:\home\eshop\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 Z:\home\eshop\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 Z:\home\eshop\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/user/admi...')
+#9 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\eshop\www\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/user/admin
+HTTP_REFERER=http://eshop/admin/user/create
+---
+2013/12/26 23:14:55 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'У вас недостаточно прав для выполнения указанного действия.' in Z:\home\eshop\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 Z:\home\eshop\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), '?? ?????? ?????...')
+#1 Z:\home\eshop\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 Z:\home\eshop\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 Z:\home\eshop\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 Z:\home\eshop\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 Z:\home\eshop\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/user/admi...')
+#9 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\eshop\www\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/user/admin
+HTTP_REFERER=http://eshop/admin/user/
+---
+2013/12/26 23:16:03 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'У вас недостаточно прав для выполнения указанного действия.' in Z:\home\eshop\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 Z:\home\eshop\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), '?? ?????? ?????...')
+#1 Z:\home\eshop\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 Z:\home\eshop\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 Z:\home\eshop\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 Z:\home\eshop\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 Z:\home\eshop\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/user/admi...')
+#9 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\eshop\www\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/user/admin
+HTTP_REFERER=http://eshop/login
+---
+2013/12/26 23:16:07 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'У вас недостаточно прав для выполнения указанного действия.' in Z:\home\eshop\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 Z:\home\eshop\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), '?? ?????? ?????...')
+#1 Z:\home\eshop\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 Z:\home\eshop\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 Z:\home\eshop\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 Z:\home\eshop\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 Z:\home\eshop\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/user/admi...')
+#9 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\eshop\www\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/user/admin
+HTTP_REFERER=http://eshop/login
+---
+2013/12/26 23:16:08 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'У вас недостаточно прав для выполнения указанного действия.' in Z:\home\eshop\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 Z:\home\eshop\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), '?? ?????? ?????...')
+#1 Z:\home\eshop\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 Z:\home\eshop\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 Z:\home\eshop\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 Z:\home\eshop\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 Z:\home\eshop\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/user/admi...')
+#9 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\eshop\www\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/user/admin
+HTTP_REFERER=http://eshop/login
+---
+2013/12/26 23:16:09 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'У вас недостаточно прав для выполнения указанного действия.' in Z:\home\eshop\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 Z:\home\eshop\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), '?? ?????? ?????...')
+#1 Z:\home\eshop\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 Z:\home\eshop\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 Z:\home\eshop\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 Z:\home\eshop\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 Z:\home\eshop\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/user/admi...')
+#9 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\eshop\www\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/user/admin
+HTTP_REFERER=http://eshop/login
+---
+2013/12/26 23:16:10 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'У вас недостаточно прав для выполнения указанного действия.' in Z:\home\eshop\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 Z:\home\eshop\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), '?? ?????? ?????...')
+#1 Z:\home\eshop\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 Z:\home\eshop\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 Z:\home\eshop\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 Z:\home\eshop\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 Z:\home\eshop\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/user/admi...')
+#9 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\eshop\www\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/user/admin
+HTTP_REFERER=http://eshop/login
+---
+2013/12/26 23:16:19 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'У вас недостаточно прав для выполнения указанного действия.' in Z:\home\eshop\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 Z:\home\eshop\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), '?? ?????? ?????...')
+#1 Z:\home\eshop\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 Z:\home\eshop\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 Z:\home\eshop\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 Z:\home\eshop\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 Z:\home\eshop\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/user/admi...')
+#9 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\eshop\www\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/user/admin
+HTTP_REFERER=http://eshop/login
+---
+2013/12/26 23:16:19 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'У вас недостаточно прав для выполнения указанного действия.' in Z:\home\eshop\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 Z:\home\eshop\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), '?? ?????? ?????...')
+#1 Z:\home\eshop\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 Z:\home\eshop\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 Z:\home\eshop\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 Z:\home\eshop\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 Z:\home\eshop\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/user/admi...')
+#9 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\eshop\www\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/user/admin
+HTTP_REFERER=http://eshop/login
+---
+2013/12/26 23:16:19 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'У вас недостаточно прав для выполнения указанного действия.' in Z:\home\eshop\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 Z:\home\eshop\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), '?? ?????? ?????...')
+#1 Z:\home\eshop\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 Z:\home\eshop\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 Z:\home\eshop\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 Z:\home\eshop\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 Z:\home\eshop\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/user/admi...')
+#9 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\eshop\www\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/user/admin
+HTTP_REFERER=http://eshop/login
+---
+2013/12/26 23:16:20 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'У вас недостаточно прав для выполнения указанного действия.' in Z:\home\eshop\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 Z:\home\eshop\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), '?? ?????? ?????...')
+#1 Z:\home\eshop\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 Z:\home\eshop\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 Z:\home\eshop\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 Z:\home\eshop\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 Z:\home\eshop\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/user/admi...')
+#9 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\eshop\www\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/user/admin
+HTTP_REFERER=http://eshop/login
+---
+2013/12/26 23:16:20 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'У вас недостаточно прав для выполнения указанного действия.' in Z:\home\eshop\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 Z:\home\eshop\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), '?? ?????? ?????...')
+#1 Z:\home\eshop\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 Z:\home\eshop\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 Z:\home\eshop\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 Z:\home\eshop\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 Z:\home\eshop\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/user/admi...')
+#9 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\eshop\www\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/user/admin
+HTTP_REFERER=http://eshop/login
+---
+2013/12/26 23:16:20 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'У вас недостаточно прав для выполнения указанного действия.' in Z:\home\eshop\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 Z:\home\eshop\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), '?? ?????? ?????...')
+#1 Z:\home\eshop\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 Z:\home\eshop\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 Z:\home\eshop\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 Z:\home\eshop\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 Z:\home\eshop\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/user/admi...')
+#9 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\eshop\www\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/user/admin
+HTTP_REFERER=http://eshop/login
+---
+2013/12/26 23:16:43 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'У вас недостаточно прав для выполнения указанного действия.' in Z:\home\eshop\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 Z:\home\eshop\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), '?? ?????? ?????...')
+#1 Z:\home\eshop\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 Z:\home\eshop\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 Z:\home\eshop\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 Z:\home\eshop\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 Z:\home\eshop\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/user/admi...')
+#9 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\eshop\www\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/user/admin
+HTTP_REFERER=http://eshop/login
+---
+2013/12/26 23:16:45 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'У вас недостаточно прав для выполнения указанного действия.' in Z:\home\eshop\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 Z:\home\eshop\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), '?? ?????? ?????...')
+#1 Z:\home\eshop\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 Z:\home\eshop\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 Z:\home\eshop\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 Z:\home\eshop\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 Z:\home\eshop\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/user/admi...')
+#9 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\eshop\www\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/user/admin
+HTTP_REFERER=http://eshop/login
+---
+2013/12/26 23:17:07 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'У вас недостаточно прав для выполнения указанного действия.' in Z:\home\eshop\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 Z:\home\eshop\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), '?? ?????? ?????...')
+#1 Z:\home\eshop\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 Z:\home\eshop\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 Z:\home\eshop\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 Z:\home\eshop\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 Z:\home\eshop\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/user/admi...')
+#9 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\eshop\www\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/user/admin
+HTTP_REFERER=http://eshop/login
+---
+2013/12/26 23:17:12 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'У вас недостаточно прав для выполнения указанного действия.' in Z:\home\eshop\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 Z:\home\eshop\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), '?? ?????? ?????...')
+#1 Z:\home\eshop\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 Z:\home\eshop\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 Z:\home\eshop\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 Z:\home\eshop\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 Z:\home\eshop\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/user/admi...')
+#9 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\eshop\www\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/user/admin
+HTTP_REFERER=http://eshop/login
+---
+2013/12/26 23:17:15 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'У вас недостаточно прав для выполнения указанного действия.' in Z:\home\eshop\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 Z:\home\eshop\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), '?? ?????? ?????...')
+#1 Z:\home\eshop\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 Z:\home\eshop\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 Z:\home\eshop\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 Z:\home\eshop\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 Z:\home\eshop\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/user/admi...')
+#9 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\eshop\www\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/user/admin
+HTTP_REFERER=http://eshop/login
+---
+2013/12/26 23:18:28 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'У вас недостаточно прав для выполнения указанного действия.' in Z:\home\eshop\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 Z:\home\eshop\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), '?? ?????? ?????...')
+#1 Z:\home\eshop\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 Z:\home\eshop\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 Z:\home\eshop\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 Z:\home\eshop\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 Z:\home\eshop\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/user/admi...')
+#9 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\eshop\www\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/user/admin
+HTTP_REFERER=http://eshop/login
+---
+2013/12/26 23:20:11 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'У вас недостаточно прав для выполнения указанного действия.' in Z:\home\eshop\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 Z:\home\eshop\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), '?? ?????? ?????...')
+#1 Z:\home\eshop\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 Z:\home\eshop\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 Z:\home\eshop\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 Z:\home\eshop\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 Z:\home\eshop\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/user/admi...')
+#9 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\eshop\www\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/user/admin
+HTTP_REFERER=http://eshop/admin/user
+---
+2013/12/26 23:23:10 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'У вас недостаточно прав для выполнения указанного действия.' in Z:\home\eshop\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 Z:\home\eshop\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), '?? ?????? ?????...')
+#1 Z:\home\eshop\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 Z:\home\eshop\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 Z:\home\eshop\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 Z:\home\eshop\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 Z:\home\eshop\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('create')
+#8 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/user/crea...')
+#9 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\eshop\www\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/user/create
+HTTP_REFERER=http://eshop/admin/user
+---
+2013/12/26 23:23:14 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'У вас недостаточно прав для выполнения указанного действия.' in Z:\home\eshop\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 Z:\home\eshop\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), '?? ?????? ?????...')
+#1 Z:\home\eshop\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 Z:\home\eshop\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 Z:\home\eshop\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 Z:\home\eshop\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 Z:\home\eshop\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/user/admi...')
+#9 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\eshop\www\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/user/admin
+HTTP_REFERER=http://eshop/admin/user
+---
+2013/12/26 23:35:46 [error] [exception.CException] exception 'CException' with message 'Неизвестный элемент авторизации "".' in Z:\home\eshop\framework\web\auth\CPhpAuthManager.php:179
+Stack trace:
+#0 Z:\home\eshop\www\protected\components\PhpAuthManager.php(18): CPhpAuthManager->assign(NULL, '1')
+#1 Z:\home\eshop\framework\base\CModule.php(387): PhpAuthManager->init()
+#2 Z:\home\eshop\framework\web\CWebApplication.php(185): CModule->getComponent('authManager')
+#3 Z:\home\eshop\framework\web\auth\CWebUser.php(815): CWebApplication->getAuthManager()
+#4 Z:\home\eshop\framework\web\auth\CAccessControlFilter.php(346): CWebUser->checkAccess('admin')
+#5 Z:\home\eshop\framework\web\auth\CAccessControlFilter.php(284): CAccessRule->isRoleMatched(Object(WebUser))
+#6 Z:\home\eshop\framework\web\auth\CAccessControlFilter.php(138): CAccessRule->isUserAllowed(Object(WebUser), Object(UserController), Object(CInlineAction), '127.0.0.1', 'GET')
+#7 Z:\home\eshop\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#8 Z:\home\eshop\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 Z:\home\eshop\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 Z:\home\eshop\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 Z:\home\eshop\framework\web\CController.php(291): CFilterChain->run()
+#12 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('admin')
+#14 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/user/admi...')
+#15 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 Z:\home\eshop\www\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/admin/user/admin
+HTTP_REFERER=http://eshop/admin/user
+---
+2013/12/26 23:36:34 [error] [exception.CException] exception 'CException' with message 'Неизвестный элемент авторизации "".' in Z:\home\eshop\framework\web\auth\CPhpAuthManager.php:179
+Stack trace:
+#0 Z:\home\eshop\www\protected\components\PhpAuthManager.php(18): CPhpAuthManager->assign(NULL, '1')
+#1 Z:\home\eshop\framework\base\CModule.php(387): PhpAuthManager->init()
+#2 Z:\home\eshop\framework\web\CWebApplication.php(185): CModule->getComponent('authManager')
+#3 Z:\home\eshop\framework\web\auth\CWebUser.php(815): CWebApplication->getAuthManager()
+#4 Z:\home\eshop\framework\web\auth\CAccessControlFilter.php(346): CWebUser->checkAccess('admin')
+#5 Z:\home\eshop\framework\web\auth\CAccessControlFilter.php(284): CAccessRule->isRoleMatched(Object(WebUser))
+#6 Z:\home\eshop\framework\web\auth\CAccessControlFilter.php(138): CAccessRule->isUserAllowed(Object(WebUser), Object(UserController), Object(CInlineAction), '127.0.0.1', 'GET')
+#7 Z:\home\eshop\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#8 Z:\home\eshop\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 Z:\home\eshop\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 Z:\home\eshop\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 Z:\home\eshop\framework\web\CController.php(291): CFilterChain->run()
+#12 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('admin')
+#14 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/user/admi...')
+#15 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 Z:\home\eshop\www\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/admin/user/admin
+HTTP_REFERER=http://eshop/admin/user
+---
+2013/12/26 23:37:38 [error] [exception.CException] exception 'CException' with message 'Неизвестный элемент авторизации "1".' in Z:\home\eshop\framework\web\auth\CPhpAuthManager.php:179
+Stack trace:
+#0 Z:\home\eshop\www\protected\components\PhpAuthManager.php(18): CPhpAuthManager->assign('1', '1')
+#1 Z:\home\eshop\framework\base\CModule.php(387): PhpAuthManager->init()
+#2 Z:\home\eshop\framework\web\CWebApplication.php(185): CModule->getComponent('authManager')
+#3 Z:\home\eshop\framework\web\auth\CWebUser.php(815): CWebApplication->getAuthManager()
+#4 Z:\home\eshop\framework\web\auth\CAccessControlFilter.php(346): CWebUser->checkAccess('admin')
+#5 Z:\home\eshop\framework\web\auth\CAccessControlFilter.php(284): CAccessRule->isRoleMatched(Object(WebUser))
+#6 Z:\home\eshop\framework\web\auth\CAccessControlFilter.php(138): CAccessRule->isUserAllowed(Object(WebUser), Object(UserController), Object(CInlineAction), '127.0.0.1', 'GET')
+#7 Z:\home\eshop\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#8 Z:\home\eshop\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 Z:\home\eshop\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 Z:\home\eshop\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 Z:\home\eshop\framework\web\CController.php(291): CFilterChain->run()
+#12 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('admin')
+#14 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/user/admi...')
+#15 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 Z:\home\eshop\www\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/admin/user/admin
+HTTP_REFERER=http://eshop/admin/user
+---
+2013/12/26 23:37:51 [error] [exception.CException] exception 'CException' with message 'Неизвестный элемент авторизации "".' in Z:\home\eshop\framework\web\auth\CPhpAuthManager.php:179
+Stack trace:
+#0 Z:\home\eshop\www\protected\components\PhpAuthManager.php(18): CPhpAuthManager->assign(NULL, '1')
+#1 Z:\home\eshop\framework\base\CModule.php(387): PhpAuthManager->init()
+#2 Z:\home\eshop\framework\web\CWebApplication.php(185): CModule->getComponent('authManager')
+#3 Z:\home\eshop\framework\web\auth\CWebUser.php(815): CWebApplication->getAuthManager()
+#4 Z:\home\eshop\framework\web\auth\CAccessControlFilter.php(346): CWebUser->checkAccess('admin')
+#5 Z:\home\eshop\framework\web\auth\CAccessControlFilter.php(284): CAccessRule->isRoleMatched(Object(WebUser))
+#6 Z:\home\eshop\framework\web\auth\CAccessControlFilter.php(138): CAccessRule->isUserAllowed(Object(WebUser), Object(UserController), Object(CInlineAction), '127.0.0.1', 'GET')
+#7 Z:\home\eshop\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#8 Z:\home\eshop\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 Z:\home\eshop\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 Z:\home\eshop\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 Z:\home\eshop\framework\web\CController.php(291): CFilterChain->run()
+#12 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('admin')
+#14 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/user/admi...')
+#15 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 Z:\home\eshop\www\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/admin/user/admin
+HTTP_REFERER=http://eshop/admin/user
+---
+2013/12/26 23:38:19 [error] [exception.CException] exception 'CException' with message 'Неизвестный элемент авторизации "Admin".' in Z:\home\eshop\framework\web\auth\CPhpAuthManager.php:179
+Stack trace:
+#0 Z:\home\eshop\www\protected\components\PhpAuthManager.php(18): CPhpAuthManager->assign('Admin', '1')
+#1 Z:\home\eshop\framework\base\CModule.php(387): PhpAuthManager->init()
+#2 Z:\home\eshop\framework\web\CWebApplication.php(185): CModule->getComponent('authManager')
+#3 Z:\home\eshop\framework\web\auth\CWebUser.php(815): CWebApplication->getAuthManager()
+#4 Z:\home\eshop\framework\web\auth\CAccessControlFilter.php(346): CWebUser->checkAccess('admin')
+#5 Z:\home\eshop\framework\web\auth\CAccessControlFilter.php(284): CAccessRule->isRoleMatched(Object(WebUser))
+#6 Z:\home\eshop\framework\web\auth\CAccessControlFilter.php(138): CAccessRule->isUserAllowed(Object(WebUser), Object(UserController), Object(CInlineAction), '127.0.0.1', 'GET')
+#7 Z:\home\eshop\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#8 Z:\home\eshop\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 Z:\home\eshop\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 Z:\home\eshop\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 Z:\home\eshop\framework\web\CController.php(291): CFilterChain->run()
+#12 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('admin')
+#14 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/user/admi...')
+#15 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 Z:\home\eshop\www\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/admin/user/admin
+HTTP_REFERER=http://eshop/admin/user
+---
+2013/12/26 23:38:24 [error] [exception.CException] exception 'CException' with message 'Неизвестный элемент авторизации "Admin".' in Z:\home\eshop\framework\web\auth\CPhpAuthManager.php:179
+Stack trace:
+#0 Z:\home\eshop\www\protected\components\PhpAuthManager.php(18): CPhpAuthManager->assign('Admin', '1')
+#1 Z:\home\eshop\framework\base\CModule.php(387): PhpAuthManager->init()
+#2 Z:\home\eshop\framework\web\CWebApplication.php(185): CModule->getComponent('authManager')
+#3 Z:\home\eshop\framework\web\auth\CWebUser.php(815): CWebApplication->getAuthManager()
+#4 Z:\home\eshop\framework\web\auth\CAccessControlFilter.php(346): CWebUser->checkAccess('admin')
+#5 Z:\home\eshop\framework\web\auth\CAccessControlFilter.php(284): CAccessRule->isRoleMatched(Object(WebUser))
+#6 Z:\home\eshop\framework\web\auth\CAccessControlFilter.php(138): CAccessRule->isUserAllowed(Object(WebUser), Object(UserController), Object(CInlineAction), '127.0.0.1', 'GET')
+#7 Z:\home\eshop\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#8 Z:\home\eshop\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 Z:\home\eshop\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 Z:\home\eshop\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 Z:\home\eshop\framework\web\CController.php(291): CFilterChain->run()
+#12 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('admin')
+#14 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/user/admi...')
+#15 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 Z:\home\eshop\www\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/admin/user/admin
+HTTP_REFERER=http://eshop/admin/user
+---
+2013/12/26 23:42:00 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'У вас недостаточно прав для выполнения указанного действия.' in Z:\home\eshop\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 Z:\home\eshop\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), '?? ?????? ?????...')
+#1 Z:\home\eshop\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 Z:\home\eshop\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 Z:\home\eshop\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 Z:\home\eshop\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 Z:\home\eshop\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('')
+#8 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/user')
+#9 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\eshop\www\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/user
+HTTP_REFERER=http://eshop/admin/
+---
+2013/12/26 23:42:19 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'У вас недостаточно прав для выполнения указанного действия.' in Z:\home\eshop\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 Z:\home\eshop\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), '?? ?????? ?????...')
+#1 Z:\home\eshop\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 Z:\home\eshop\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 Z:\home\eshop\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 Z:\home\eshop\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 Z:\home\eshop\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('')
+#8 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/user')
+#9 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\eshop\www\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/user
+HTTP_REFERER=http://eshop/admin/
+---
+2013/12/26 23:43:02 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'У вас недостаточно прав для выполнения указанного действия.' in Z:\home\eshop\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 Z:\home\eshop\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), '?? ?????? ?????...')
+#1 Z:\home\eshop\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 Z:\home\eshop\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 Z:\home\eshop\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 Z:\home\eshop\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 Z:\home\eshop\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/user/admi...')
+#9 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\eshop\www\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/user/admin
+HTTP_REFERER=http://eshop/admin/user
+---
+2013/12/26 23:43:22 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'У вас недостаточно прав для выполнения указанного действия.' in Z:\home\eshop\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 Z:\home\eshop\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), '?? ?????? ?????...')
+#1 Z:\home\eshop\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 Z:\home\eshop\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 Z:\home\eshop\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 Z:\home\eshop\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 Z:\home\eshop\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('create')
+#8 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/user/crea...')
+#9 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\eshop\www\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/user/create
+HTTP_REFERER=http://eshop/admin/user/index
+---
+2013/12/26 23:47:19 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'У вас недостаточно прав для выполнения указанного действия.' in Z:\home\eshop\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 Z:\home\eshop\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), '?? ?????? ?????...')
+#1 Z:\home\eshop\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 Z:\home\eshop\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 Z:\home\eshop\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 Z:\home\eshop\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 Z:\home\eshop\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('create')
+#8 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/user/crea...')
+#9 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\eshop\www\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/user/create
+HTTP_REFERER=http://eshop/admin/user/index
+---
+2013/12/26 23:55:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "admin".' in Z:\home\eshop\framework\web\CController.php:483
+Stack trace:
+#0 Z:\home\eshop\framework\web\CController.php(270): CController->missingAction('admin')
+#1 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('admin')
+#2 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('site/admin')
+#3 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 Z:\home\eshop\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/admin
+HTTP_REFERER=http://eshop/
+---
+2013/12/26 23:55:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "admin".' in Z:\home\eshop\framework\web\CController.php:483
+Stack trace:
+#0 Z:\home\eshop\framework\web\CController.php(270): CController->missingAction('admin')
+#1 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('admin')
+#2 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('site/admin')
+#3 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 Z:\home\eshop\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/admin
+HTTP_REFERER=http://eshop/
+---
+2013/12/26 23:55:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "admin".' in Z:\home\eshop\framework\web\CController.php:483
+Stack trace:
+#0 Z:\home\eshop\framework\web\CController.php(270): CController->missingAction('admin')
+#1 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('admin')
+#2 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('site/admin')
+#3 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 Z:\home\eshop\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/admin
+HTTP_REFERER=http://eshop/
+---
+2013/12/27 00:10:07 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'У вас недостаточно прав для выполнения указанного действия.' in Z:\home\eshop\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 Z:\home\eshop\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), '?? ?????? ?????...')
+#1 Z:\home\eshop\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 Z:\home\eshop\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 Z:\home\eshop\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 Z:\home\eshop\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 Z:\home\eshop\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/user/admi...')
+#9 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\eshop\www\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/user/admin
+HTTP_REFERER=http://eshop/admin/user
+---
+2013/12/27 00:10:11 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'У вас недостаточно прав для выполнения указанного действия.' in Z:\home\eshop\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 Z:\home\eshop\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), '?? ?????? ?????...')
+#1 Z:\home\eshop\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 Z:\home\eshop\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 Z:\home\eshop\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 Z:\home\eshop\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 Z:\home\eshop\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('update')
+#8 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/user/upda...')
+#9 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\eshop\www\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/user/update/id/1
+HTTP_REFERER=http://eshop/admin/user/view/id/1
+---
+2013/12/27 00:16:44 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'У вас недостаточно прав для выполнения указанного действия.' in Z:\home\eshop\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 Z:\home\eshop\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), '?? ?????? ?????...')
+#1 Z:\home\eshop\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 Z:\home\eshop\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 Z:\home\eshop\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 Z:\home\eshop\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 Z:\home\eshop\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('')
+#8 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('admin')
+#9 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\eshop\www\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/
+HTTP_REFERER=http://eshop/login
+---
+2013/12/27 00:17:02 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'У вас недостаточно прав для выполнения указанного действия.' in Z:\home\eshop\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 Z:\home\eshop\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), '?? ?????? ?????...')
+#1 Z:\home\eshop\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 Z:\home\eshop\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 Z:\home\eshop\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 Z:\home\eshop\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 Z:\home\eshop\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('')
+#8 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('admin')
+#9 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\eshop\www\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/
+---
+2013/12/27 00:26:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "404".' in Z:\home\eshop\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('404')
+#1 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\eshop\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/404
+---
+2013/12/27 00:27:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Указанная запись не найдена' in Z:\home\eshop\www\protected\modules\admin\components\Controller.php:10
+Stack trace:
+#0 Z:\home\eshop\framework\web\CWebApplication.php(359): Controller->__construct('default', Object(AdminModule))
+#1 Z:\home\eshop\framework\web\CWebApplication.php(338): CWebApplication->createController('', Object(AdminModule))
+#2 Z:\home\eshop\framework\web\CWebApplication.php(276): CWebApplication->createController('admin')
+#3 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('admin')
+#4 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 Z:\home\eshop\www\index.php(13): CApplication->run()
+#6 {main}
+REQUEST_URI=/admin/
+---
+2013/12/27 00:28:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Указанная запись не найдена' in Z:\home\eshop\www\protected\modules\admin\controllers\DefaultController.php:7
+Stack trace:
+#0 Z:\home\eshop\framework\web\CWebApplication.php(359): DefaultController->__construct('default', Object(AdminModule))
+#1 Z:\home\eshop\framework\web\CWebApplication.php(338): CWebApplication->createController('', Object(AdminModule))
+#2 Z:\home\eshop\framework\web\CWebApplication.php(276): CWebApplication->createController('admin')
+#3 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('admin')
+#4 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 Z:\home\eshop\www\index.php(13): CApplication->run()
+#6 {main}
+REQUEST_URI=/admin/
+---
+2013/12/27 00:28:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Указанная запись не найдена' in Z:\home\eshop\www\protected\modules\admin\controllers\DefaultController.php:7
+Stack trace:
+#0 Z:\home\eshop\framework\web\CWebApplication.php(359): DefaultController->__construct('default', Object(AdminModule))
+#1 Z:\home\eshop\framework\web\CWebApplication.php(338): CWebApplication->createController('', Object(AdminModule))
+#2 Z:\home\eshop\framework\web\CWebApplication.php(276): CWebApplication->createController('admin')
+#3 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('admin')
+#4 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 Z:\home\eshop\www\index.php(13): CApplication->run()
+#6 {main}
+REQUEST_URI=/admin/
+---
+2013/12/27 00:30:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Указанная запись не найдена' in Z:\home\eshop\www\protected\modules\admin\controllers\PageController.php:7
+Stack trace:
+#0 Z:\home\eshop\framework\web\CWebApplication.php(359): PageController->__construct('page', Object(AdminModule))
+#1 Z:\home\eshop\framework\web\CWebApplication.php(338): CWebApplication->createController('page/', Object(AdminModule))
+#2 Z:\home\eshop\framework\web\CWebApplication.php(276): CWebApplication->createController('admin/page')
+#3 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/page')
+#4 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 Z:\home\eshop\www\index.php(13): CApplication->run()
+#6 {main}
+REQUEST_URI=/admin/page
+---
+2013/12/27 00:30:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Указанная запись не найдена' in Z:\home\eshop\www\protected\modules\admin\controllers\ProductController.php:7
+Stack trace:
+#0 Z:\home\eshop\framework\web\CWebApplication.php(359): ProductController->__construct('product', Object(AdminModule))
+#1 Z:\home\eshop\framework\web\CWebApplication.php(338): CWebApplication->createController('product/', Object(AdminModule))
+#2 Z:\home\eshop\framework\web\CWebApplication.php(276): CWebApplication->createController('admin/product')
+#3 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/product')
+#4 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 Z:\home\eshop\www\index.php(13): CApplication->run()
+#6 {main}
+REQUEST_URI=/admin/product
+---
+2013/12/27 00:30:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Указанная запись не найдена' in Z:\home\eshop\www\protected\modules\admin\controllers\CategoryController.php:7
+Stack trace:
+#0 Z:\home\eshop\framework\web\CWebApplication.php(359): CategoryController->__construct('category', Object(AdminModule))
+#1 Z:\home\eshop\framework\web\CWebApplication.php(338): CWebApplication->createController('category/', Object(AdminModule))
+#2 Z:\home\eshop\framework\web\CWebApplication.php(276): CWebApplication->createController('admin/category')
+#3 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/category')
+#4 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 Z:\home\eshop\www\index.php(13): CApplication->run()
+#6 {main}
+REQUEST_URI=/admin/category
+---
+2013/12/27 00:30:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Указанная запись не найдена' in Z:\home\eshop\www\protected\modules\admin\controllers\DefaultController.php:7
+Stack trace:
+#0 Z:\home\eshop\framework\web\CWebApplication.php(359): DefaultController->__construct('default', Object(AdminModule))
+#1 Z:\home\eshop\framework\web\CWebApplication.php(338): CWebApplication->createController('', Object(AdminModule))
+#2 Z:\home\eshop\framework\web\CWebApplication.php(276): CWebApplication->createController('admin')
+#3 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('admin')
+#4 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 Z:\home\eshop\www\index.php(13): CApplication->run()
+#6 {main}
+REQUEST_URI=/admin/
+---
+2013/12/27 00:30:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "admin/order".' in Z:\home\eshop\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/order')
+#1 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\eshop\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/admin/order
+HTTP_REFERER=http://eshop/admin/user
+---
+2013/12/27 00:34:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Указанная запись не найдена' in Z:\home\eshop\www\protected\modules\admin\controllers\DefaultController.php:7
+Stack trace:
+#0 Z:\home\eshop\framework\web\CWebApplication.php(359): DefaultController->__construct('default', Object(AdminModule))
+#1 Z:\home\eshop\framework\web\CWebApplication.php(338): CWebApplication->createController('', Object(AdminModule))
+#2 Z:\home\eshop\framework\web\CWebApplication.php(276): CWebApplication->createController('admin')
+#3 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('admin')
+#4 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 Z:\home\eshop\www\index.php(13): CApplication->run()
+#6 {main}
+REQUEST_URI=/admin/
+---
+2013/12/27 00:34:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Указанная запись не найдена' in Z:\home\eshop\www\protected\modules\admin\controllers\DefaultController.php:7
+Stack trace:
+#0 Z:\home\eshop\framework\web\CWebApplication.php(359): DefaultController->__construct('default', Object(AdminModule))
+#1 Z:\home\eshop\framework\web\CWebApplication.php(338): CWebApplication->createController('', Object(AdminModule))
+#2 Z:\home\eshop\framework\web\CWebApplication.php(276): CWebApplication->createController('admin')
+#3 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('admin')
+#4 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 Z:\home\eshop\www\index.php(13): CApplication->run()
+#6 {main}
+REQUEST_URI=/admin/
+---
+2013/12/27 00:35:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Указанная запись не найдена' in Z:\home\eshop\www\protected\modules\admin\controllers\DefaultController.php:7
+Stack trace:
+#0 Z:\home\eshop\framework\web\CWebApplication.php(359): DefaultController->__construct('default', Object(AdminModule))
+#1 Z:\home\eshop\framework\web\CWebApplication.php(338): CWebApplication->createController('', Object(AdminModule))
+#2 Z:\home\eshop\framework\web\CWebApplication.php(276): CWebApplication->createController('admin')
+#3 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('admin')
+#4 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 Z:\home\eshop\www\index.php(13): CApplication->run()
+#6 {main}
+REQUEST_URI=/admin/
+---
+2013/12/27 00:35:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Указанная запись не найдена' in Z:\home\eshop\www\protected\modules\admin\controllers\DefaultController.php:7
+Stack trace:
+#0 Z:\home\eshop\framework\web\CWebApplication.php(359): DefaultController->__construct('default', Object(AdminModule))
+#1 Z:\home\eshop\framework\web\CWebApplication.php(338): CWebApplication->createController('', Object(AdminModule))
+#2 Z:\home\eshop\framework\web\CWebApplication.php(276): CWebApplication->createController('admin')
+#3 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('admin')
+#4 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 Z:\home\eshop\www\index.php(13): CApplication->run()
+#6 {main}
+REQUEST_URI=/admin/
+---
+2013/12/27 00:35:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Указанная запись не найдена' in Z:\home\eshop\www\protected\modules\admin\controllers\DefaultController.php:7
+Stack trace:
+#0 Z:\home\eshop\framework\web\CWebApplication.php(359): DefaultController->__construct('default', Object(AdminModule))
+#1 Z:\home\eshop\framework\web\CWebApplication.php(338): CWebApplication->createController('', Object(AdminModule))
+#2 Z:\home\eshop\framework\web\CWebApplication.php(276): CWebApplication->createController('admin')
+#3 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('admin')
+#4 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 Z:\home\eshop\www\index.php(13): CApplication->run()
+#6 {main}
+REQUEST_URI=/admin/
+---
+2013/12/27 00:35:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Указанная запись не найдена' in Z:\home\eshop\www\protected\modules\admin\controllers\DefaultController.php:7
+Stack trace:
+#0 Z:\home\eshop\framework\web\CWebApplication.php(359): DefaultController->__construct('default', Object(AdminModule))
+#1 Z:\home\eshop\framework\web\CWebApplication.php(338): CWebApplication->createController('', Object(AdminModule))
+#2 Z:\home\eshop\framework\web\CWebApplication.php(276): CWebApplication->createController('admin')
+#3 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('admin')
+#4 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 Z:\home\eshop\www\index.php(13): CApplication->run()
+#6 {main}
+REQUEST_URI=/admin/
+---
+2013/12/27 00:35:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Указанная запись не найдена' in Z:\home\eshop\www\protected\modules\admin\controllers\DefaultController.php:7
+Stack trace:
+#0 Z:\home\eshop\framework\web\CWebApplication.php(359): DefaultController->__construct('default', Object(AdminModule))
+#1 Z:\home\eshop\framework\web\CWebApplication.php(338): CWebApplication->createController('', Object(AdminModule))
+#2 Z:\home\eshop\framework\web\CWebApplication.php(276): CWebApplication->createController('admin')
+#3 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('admin')
+#4 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 Z:\home\eshop\www\index.php(13): CApplication->run()
+#6 {main}
+REQUEST_URI=/admin/
+---
+2013/12/27 00:36:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Указанная запись не найдена' in Z:\home\eshop\www\protected\modules\admin\controllers\DefaultController.php:7
+Stack trace:
+#0 Z:\home\eshop\framework\web\CController.php(306): DefaultController->beforeAction(Object(CInlineAction))
+#1 Z:\home\eshop\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('')
+#4 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('admin')
+#5 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 Z:\home\eshop\www\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/admin/
+---
+2013/12/27 00:36:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Указанная запись не найдена' in Z:\home\eshop\www\protected\modules\admin\controllers\DefaultController.php:7
+Stack trace:
+#0 Z:\home\eshop\framework\web\CController.php(306): DefaultController->beforeAction(Object(CInlineAction))
+#1 Z:\home\eshop\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('')
+#4 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('admin')
+#5 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 Z:\home\eshop\www\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/admin/
+---
+2013/12/27 00:36:55 [error] [php] Missing argument 1 for CController::beforeAction(), called in Z:\home\eshop\www\protected\modules\admin\controllers\DefaultController.php on line 8 and defined (Z:\home\eshop\framework\web\CController.php:1093)
+Stack trace:
+#0 Z:\home\eshop\framework\web\CController.php(286): DefaultController->runAction()
+#1 Z:\home\eshop\framework\web\CController.php(265): DefaultController->runActionWithFilters()
+#2 Z:\home\eshop\framework\web\CWebApplication.php(282): DefaultController->run()
+#3 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 Z:\home\eshop\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/admin
+in Z:\home\eshop\www\protected\modules\admin\controllers\DefaultController.php (8)
+in Z:\home\eshop\www\index.php (13)
+2013/12/27 00:37:28 [error] [php] Missing argument 1 for CController::beforeAction(), called in Z:\home\eshop\www\protected\modules\admin\controllers\DefaultController.php on line 8 and defined (Z:\home\eshop\framework\web\CController.php:1093)
+Stack trace:
+#0 Z:\home\eshop\framework\web\CController.php(286): DefaultController->runAction()
+#1 Z:\home\eshop\framework\web\CController.php(265): DefaultController->runActionWithFilters()
+#2 Z:\home\eshop\framework\web\CWebApplication.php(282): DefaultController->run()
+#3 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 Z:\home\eshop\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/admin
+in Z:\home\eshop\www\protected\modules\admin\controllers\DefaultController.php (8)
+in Z:\home\eshop\www\index.php (13)
+2013/12/27 00:38:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Указанная запись не найдена' in Z:\home\eshop\www\protected\modules\admin\controllers\DefaultController.php:7
+Stack trace:
+#0 Z:\home\eshop\framework\web\CController.php(306): DefaultController->beforeAction(Object(CInlineAction))
+#1 Z:\home\eshop\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('')
+#4 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('admin')
+#5 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 Z:\home\eshop\www\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/admin/
+---
+2013/12/27 00:38:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Указанная запись не найдена' in Z:\home\eshop\www\protected\modules\admin\controllers\PageController.php:7
+Stack trace:
+#0 Z:\home\eshop\framework\web\CWebApplication.php(359): PageController->__construct('page', Object(AdminModule))
+#1 Z:\home\eshop\framework\web\CWebApplication.php(338): CWebApplication->createController('page/', Object(AdminModule))
+#2 Z:\home\eshop\framework\web\CWebApplication.php(276): CWebApplication->createController('admin/page')
+#3 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/page')
+#4 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 Z:\home\eshop\www\index.php(13): CApplication->run()
+#6 {main}
+REQUEST_URI=/admin/page
+---
+2013/12/27 00:38:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Указанная запись не найдена' in Z:\home\eshop\www\protected\modules\admin\controllers\DefaultController.php:7
+Stack trace:
+#0 Z:\home\eshop\framework\web\CController.php(306): DefaultController->beforeAction(Object(CInlineAction))
+#1 Z:\home\eshop\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('')
+#4 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('admin')
+#5 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 Z:\home\eshop\www\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/admin/
+---
+2013/12/27 00:38:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "admin/index".' in Z:\home\eshop\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/index')
+#1 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\eshop\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/admin/index
+---
+2013/12/27 00:38:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Указанная запись не найдена' in Z:\home\eshop\www\protected\modules\admin\controllers\DefaultController.php:7
+Stack trace:
+#0 Z:\home\eshop\framework\web\CController.php(306): DefaultController->beforeAction(Object(CInlineAction))
+#1 Z:\home\eshop\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('')
+#4 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('admin')
+#5 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 Z:\home\eshop\www\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/admin
+---
+2013/12/27 00:38:52 [error] [exception.CHttpException.404] exception 'CHttpException' in Z:\home\eshop\www\protected\modules\admin\controllers\DefaultController.php:7
+Stack trace:
+#0 Z:\home\eshop\framework\web\CController.php(306): DefaultController->beforeAction(Object(CInlineAction))
+#1 Z:\home\eshop\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('')
+#4 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('admin')
+#5 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 Z:\home\eshop\www\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/admin
+---
+2013/12/27 00:38:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Указанная запись не найдена' in Z:\home\eshop\www\protected\modules\admin\controllers\DefaultController.php:7
+Stack trace:
+#0 Z:\home\eshop\framework\web\CController.php(306): DefaultController->beforeAction(Object(CInlineAction))
+#1 Z:\home\eshop\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('')
+#4 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('admin')
+#5 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 Z:\home\eshop\www\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/admin
+---
+2013/12/27 00:39:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Указанная страница не найдена' in Z:\home\eshop\www\protected\modules\admin\controllers\DefaultController.php:7
+Stack trace:
+#0 Z:\home\eshop\framework\web\CController.php(306): DefaultController->beforeAction(Object(CInlineAction))
+#1 Z:\home\eshop\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('')
+#4 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('admin')
+#5 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 Z:\home\eshop\www\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/admin
+---
+2013/12/27 00:40:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Указанная страница не найдена' in Z:\home\eshop\www\protected\modules\admin\controllers\DefaultController.php:7
+Stack trace:
+#0 Z:\home\eshop\framework\web\CController.php(306): DefaultController->beforeAction(Object(CInlineAction))
+#1 Z:\home\eshop\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('')
+#4 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('admin')
+#5 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 Z:\home\eshop\www\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/admin
+---
+2013/12/27 00:40:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Указанная страница не найдена' in Z:\home\eshop\www\protected\modules\admin\controllers\DefaultController.php:7
+Stack trace:
+#0 Z:\home\eshop\framework\web\CController.php(306): DefaultController->beforeAction(Object(CInlineAction))
+#1 Z:\home\eshop\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('')
+#4 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('admin')
+#5 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 Z:\home\eshop\www\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/admin
+---
+2013/12/27 00:40:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Указанная страница не найдена' in Z:\home\eshop\www\protected\modules\admin\controllers\PageController.php:7
+Stack trace:
+#0 Z:\home\eshop\framework\web\CController.php(306): PageController->beforeAction(Object(CInlineAction))
+#1 Z:\home\eshop\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 Z:\home\eshop\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 Z:\home\eshop\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 Z:\home\eshop\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 Z:\home\eshop\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 Z:\home\eshop\framework\web\CController.php(291): CFilterChain->run()
+#7 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('')
+#9 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/page')
+#10 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 Z:\home\eshop\www\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/admin/page
+---
+2013/12/27 00:40:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "as".' in Z:\home\eshop\framework\web\CController.php:483
+Stack trace:
+#0 Z:\home\eshop\framework\web\CController.php(270): CController->missingAction('as')
+#1 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('as')
+#2 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/page/as')
+#3 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 Z:\home\eshop\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/page/as
+---
+2013/12/27 00:40:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Указанная страница не найдена' in Z:\home\eshop\www\protected\modules\admin\controllers\CategoryController.php:7
+Stack trace:
+#0 Z:\home\eshop\framework\web\CController.php(306): CategoryController->beforeAction(Object(CInlineAction))
+#1 Z:\home\eshop\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 Z:\home\eshop\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 Z:\home\eshop\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 Z:\home\eshop\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 Z:\home\eshop\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 Z:\home\eshop\framework\web\CController.php(291): CFilterChain->run()
+#7 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('')
+#9 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/category')
+#10 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 Z:\home\eshop\www\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/admin/category
+---
+2013/12/27 00:40:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Указанная страница не найдена' in Z:\home\eshop\www\protected\modules\admin\controllers\UserController.php:7
+Stack trace:
+#0 Z:\home\eshop\framework\web\CController.php(306): UserController->beforeAction(Object(CInlineAction))
+#1 Z:\home\eshop\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 Z:\home\eshop\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 Z:\home\eshop\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 Z:\home\eshop\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 Z:\home\eshop\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 Z:\home\eshop\framework\web\CController.php(291): CFilterChain->run()
+#7 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('')
+#9 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/user')
+#10 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 Z:\home\eshop\www\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/admin/user/
+---
+2013/12/27 00:41:00 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'У вас недостаточно прав для выполнения указанного действия.' in Z:\home\eshop\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 Z:\home\eshop\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), '?? ?????? ?????...')
+#1 Z:\home\eshop\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 Z:\home\eshop\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 Z:\home\eshop\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 Z:\home\eshop\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 Z:\home\eshop\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/page/admi...')
+#9 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\eshop\www\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/page/admin
+HTTP_REFERER=http://eshop/admin/page
+---
+2013/12/27 00:44:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "admin/admin/category".' in Z:\home\eshop\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/admin/cat...')
+#1 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\eshop\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/admin/admin/category
+HTTP_REFERER=http://eshop/admin/category
+---
+2013/12/27 00:52:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "admin/admin/category".' in Z:\home\eshop\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/admin/cat...')
+#1 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\eshop\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/admin/admin/category
+HTTP_REFERER=http://eshop/admin/admin/user
+---
+2013/12/27 00:52:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "category".' in Z:\home\eshop\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('category')
+#1 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\eshop\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/category
+---
+2013/12/27 00:52:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "category".' in Z:\home\eshop\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('category')
+#1 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\eshop\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/category
+---
+2013/12/27 00:54:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/46cdb297/contents.css".' in Z:\home\eshop\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/46cdb297...')
+#1 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\eshop\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/46cdb297/contents.css
+---
+2013/12/27 00:56:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/46cdb297/contents.css".' in Z:\home\eshop\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/46cdb297...')
+#1 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\eshop\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/46cdb297/contents.css
+---
+2013/12/27 00:59:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "admin/order".' in Z:\home\eshop\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/order')
+#1 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\eshop\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/admin/order
+HTTP_REFERER=http://eshop/admin/user
+---
+2013/12/27 00:59:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "admin/order".' in Z:\home\eshop\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/order')
+#1 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\eshop\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/admin/order
+HTTP_REFERER=http://eshop/admin
+---

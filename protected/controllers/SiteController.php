@@ -36,7 +36,7 @@ class SiteController extends Controller
 	/**
 	 * Action для вывода товаров, категорий, страниц
 	 */
-	public function actionCategory($catg, $id)
+	public function actionCateg($catg, $id)
 	{
             if ($catg === 'product') {
                 $model = Product::model()->findByPk($id);
@@ -52,6 +52,11 @@ class SiteController extends Controller
                 $this->render('page', array('model' => $model));
             }
 	}
+        
+        public function actionCatalog()
+        {
+            $this->render('catalog');
+        }
         
 	/**
 	 * This is the action to handle external exceptions.

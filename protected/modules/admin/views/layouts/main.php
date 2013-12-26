@@ -30,14 +30,15 @@
 		<?php $this->widget('zii.widgets.CMenu',array(
 			'items'=>array(
 				array('label'=>'Главная', 'url'=>array('/site')),
-				array('label'=>'Категории', 'url'=>array('/admin/category')),
-				array('label'=>'Товары', 'url'=>array('/admin/product')),
-                                array('label'=>'Страницы', 'url'=>array('/admin/page')),
-                                array('label'=>'Пользователи', 'url'=>array('/admin/user')),
-                                array('label'=>'Заказы', 'url'=>array('/admin/order')),
+				array('label'=>'Категории', 'url'=>array('/admin/category'), 'active'=>('admin/category' === Yii::app()->request->pathInfo)),
+				array('label'=>'Товары', 'url'=>array('/admin/product'), 'active'=>('admin/product' === Yii::app()->request->pathInfo)),
+                                array('label'=>'Страницы', 'url'=>array('/admin/page'), 'active'=>('admin/page' === Yii::app()->request->pathInfo)),
+                                array('label'=>'Пользователи', 'url'=>array('/admin/user'), 'active'=>('admin/user' === Yii::app()->request->pathInfo)),
+                                array('label'=>'Заказы', 'url'=>array('/admin/order'), 'active'=>('admin/order' === Yii::app()->request->pathInfo)),
 				array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
 				array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
 			),
+                        'activateItems'=>false,
 		)); ?>
 	</div><!-- mainmenu -->
 	<?php if(isset($this->breadcrumbs)):?>

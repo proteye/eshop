@@ -125,4 +125,18 @@ class Category extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+        
+        // Формирование массива списка Категорий для CMenu.
+	public static function menu()
+	{
+            $model = self::model()->findAllByAttributes(array('parent_id' => 0, 'status' => 1));
+            $array = array();
+            
+            foreach ($model as $item) {
+                $active = ($item->full_url === Yii::app()->request->pathInfo);
+                $array[] = array('label'=>$item->title, 'url'=>array('site/categ', 'full_url' => $item->full_url), 'active' => $active);
+            }
+            
+            return $array;
+	}        
 }
