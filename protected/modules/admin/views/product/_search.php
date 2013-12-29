@@ -52,13 +52,13 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'image_url'); ?>
-		<?php echo $form->textField($model,'image_url',array('size'=>60,'maxlength'=>255)); ?>
+		<?php echo $form->label($model,'count'); ?>
+		<?php echo $form->textField($model,'count'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'count'); ?>
-		<?php echo $form->textField($model,'count'); ?>
+		<?php echo $form->label($model,'created'); ?>
+		<?php echo $form->textField($model,'created'); ?>
 	</div>
 
 	<div class="row">
@@ -97,7 +97,7 @@
 	</div>
 
 	<div class="row buttons">
-		<?php echo CHtml::submitButton('Search'); ?>
+		<?php echo CHtml::submitButton('Поиск'); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

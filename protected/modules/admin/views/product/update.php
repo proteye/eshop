@@ -3,19 +3,18 @@
 /* @var $model Product */
 
 $this->breadcrumbs=array(
-	'Products'=>array('index'),
+	'Товары'=>array('index'),
 	$model->title=>array('view','id'=>$model->id),
-	'Update',
+	'Изменить',
 );
 
 $this->menu=array(
-	array('label'=>'List Product', 'url'=>array('index')),
-	array('label'=>'Create Product', 'url'=>array('create')),
-	array('label'=>'View Product', 'url'=>array('view', 'id'=>$model->id)),
-	array('label'=>'Manage Product', 'url'=>array('admin')),
+	array('label'=>'Список Товаров', 'url'=>array('index')),
+	array('label'=>'Добавить Товар', 'url'=>array('create')),
+	array('label'=>'Просмотр Товара', 'url'=>array('view', 'id'=>$model->id)),
 );
 ?>
 
-<h1>Update Product <?php echo $model->id; ?></h1>
+<h1>Изменить Товар #<?php echo $model->id; ?></h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

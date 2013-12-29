@@ -69,6 +69,9 @@ class CategoryController extends Controller
 	 */
 	public function actionCreate()
 	{
+                // Формируем список Категорий для выпадающего списка.
+                Category::listCategory(Category::model()->make_tree(), 0, true);
+                
 		$model=new Category;
 
 		// Uncomment the following line if AJAX validation is needed
@@ -78,7 +81,7 @@ class CategoryController extends Controller
 		{
 			$model->attributes=$_POST['Category'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
+				$this->redirect(array('index'));
 		}
 
 		$this->render('create',array(
@@ -93,6 +96,9 @@ class CategoryController extends Controller
 	 */
 	public function actionUpdate($id)
 	{
+                // Формируем список Категорий для выпадающего списка.
+                Category::listCategory(Category::model()->make_tree(), 0, true);
+                
 		$model=$this->loadModel($id);
 
 		// Uncomment the following line if AJAX validation is needed
@@ -102,7 +108,7 @@ class CategoryController extends Controller
 		{
 			$model->attributes=$_POST['Category'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
+				$this->redirect(array('index'));
 		}
 
 		$this->render('update',array(
@@ -121,12 +127,13 @@ class CategoryController extends Controller
 
 		// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
 		if(!isset($_GET['ajax']))
-			$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
+			$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('index'));
 	}
 
 	/**
 	 * Lists all models.
 	 */
+        /*
 	public function actionIndex()
 	{
 		$dataProvider=new CActiveDataProvider('Category');
@@ -134,18 +141,21 @@ class CategoryController extends Controller
 			'dataProvider'=>$dataProvider,
 		));
 	}
+        */
 
 	/**
 	 * Manages all models.
 	 */
-	public function actionAdmin()
+	public function actionIndex()
 	{
+                // print_r(Category::model()->make_tree());
+                
 		$model=new Category('search');
 		$model->unsetAttributes();  // clear any default values
 		if(isset($_GET['Category']))
 			$model->attributes=$_GET['Category'];
 
-		$this->render('admin',array(
+		$this->render('index',array(
 			'model'=>$model,
 		));
 	}

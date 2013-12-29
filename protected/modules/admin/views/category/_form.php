@@ -15,13 +15,13 @@
 	'enableAjaxValidation'=>false,
 )); ?>
 
-	<p class="note">Fields with <span class="required">*</span> are required.</p>
+	<p class="note">Поля с <span class="required">*</span> являются обязательными.</p>
 
 	<?php echo $form->errorSummary($model); ?>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'parent_id'); ?>
-		<?php echo $form->textField($model,'parent_id'); ?>
+		<?php echo $form->dropDownList($model,'parent_id',Category::model()->getTree()); ?>
 		<?php echo $form->error($model,'parent_id'); ?>
 	</div>
 
@@ -35,12 +35,6 @@
 		<?php echo $form->labelEx($model,'url'); ?>
 		<?php echo $form->textField($model,'url',array('size'=>60,'maxlength'=>255)); ?>
 		<?php echo $form->error($model,'url'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'full_url'); ?>
-		<?php echo $form->textField($model,'full_url',array('size'=>60,'maxlength'=>255)); ?>
-		<?php echo $form->error($model,'full_url'); ?>
 	</div>
 
 	<div class="row">
@@ -79,12 +73,6 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'created'); ?>
-		<?php echo $form->textField($model,'created'); ?>
-		<?php echo $form->error($model,'created'); ?>
-	</div>
-
-	<div class="row">
 		<?php echo $form->labelEx($model,'sort'); ?>
 		<?php echo $form->textField($model,'sort'); ?>
 		<?php echo $form->error($model,'sort'); ?>
@@ -92,12 +80,12 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'status'); ?>
-		<?php echo $form->textField($model,'status'); ?>
+                <?php echo $form->dropDownList($model,'status',array('0'=>'Нет', '1'=>'Да')); ?>
 		<?php echo $form->error($model,'status'); ?>
 	</div>
 
 	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
+		<?php echo CHtml::submitButton($model->isNewRecord ? 'Добавить' : 'Сохранить'); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

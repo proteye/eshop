@@ -1,4 +1,4 @@
 <?php $this->widget('zii.widgets.CMenu',array(
-    'items'=>Category::menu(),
+    'items'=>Category::make_tree(),
     'activateItems'=>false,
 )); ?>

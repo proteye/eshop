@@ -43,7 +43,7 @@ class ProductController extends Controller
 				'roles'=>array('admin'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
-				'actions'=>array('admin','delete'),
+				'actions'=>array('admin','delete', 'deleteImage'),
 				'roles'=>array('admin'),
 			),
 			array('deny',  // deny all users
@@ -69,6 +69,9 @@ class ProductController extends Controller
 	 */
 	public function actionCreate()
 	{
+                // Формируем список Категорий для выпадающего списка.
+                Category::listCategory(Category::model()->make_tree());
+                
 		$model=new Product;
 
 		// Uncomment the following line if AJAX validation is needed
@@ -78,7 +81,7 @@ class ProductController extends Controller
 		{
 			$model->attributes=$_POST['Product'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
+				$this->redirect(array('index'));
 		}
 
 		$this->render('create',array(
@@ -93,6 +96,9 @@ class ProductController extends Controller
 	 */
 	public function actionUpdate($id)
 	{
+                // Формируем список Категорий для выпадающего списка.
+                Category::listCategory(Category::model()->make_tree());
+                
 		$model=$this->loadModel($id);
 
 		// Uncomment the following line if AJAX validation is needed
@@ -102,7 +108,7 @@ class ProductController extends Controller
 		{
 			$model->attributes=$_POST['Product'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
+				$this->redirect(array('index'));
 		}
 
 		$this->render('update',array(
@@ -121,31 +127,20 @@ class ProductController extends Controller
 
 		// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
 		if(!isset($_GET['ajax']))
-			$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
-	}
-
-	/**
-	 * Lists all models.
-	 */
-	public function actionIndex()
-	{
-		$dataProvider=new CActiveDataProvider('Product');
-		$this->render('index',array(
-			'dataProvider'=>$dataProvider,
-		));
+			$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('index'));
 	}
 
 	/**
 	 * Manages all models.
 	 */
-	public function actionAdmin()
+	public function actionIndex()
 	{
 		$model=new Product('search');
 		$model->unsetAttributes();  // clear any default values
 		if(isset($_GET['Product']))
 			$model->attributes=$_GET['Product'];
 
-		$this->render('admin',array(
+		$this->render('index',array(
 			'model'=>$model,
 		));
 	}
@@ -177,4 +172,13 @@ class ProductController extends Controller
 			Yii::app()->end();
 		}
 	}
+        
+        public function actionDeleteImage($id)
+        {
+            $model = Image::model()->findByPk((int)$id);
+            if ($model)
+                $model->delete();
+            else
+                throw new CHttpException(404, 'Запрашиваемая вами страница не найдена.');
+        }
 }

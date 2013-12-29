@@ -3,36 +3,44 @@
 /* @var $model Category */
 
 $this->breadcrumbs=array(
-	'Categories'=>array('index'),
+	'Категории'=>array('index'),
 	$model->title,
 );
 
 $this->menu=array(
-	array('label'=>'List Category', 'url'=>array('index')),
-	array('label'=>'Create Category', 'url'=>array('create')),
-	array('label'=>'Update Category', 'url'=>array('update', 'id'=>$model->id)),
-	array('label'=>'Delete Category', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Manage Category', 'url'=>array('admin')),
+	array('label'=>'Список Категорий', 'url'=>array('index')),
+	array('label'=>'Добавить Категорию', 'url'=>array('create')),
+	array('label'=>'Изменить Категорию', 'url'=>array('update', 'id'=>$model->id)),
+	array('label'=>'Удалить Категорию', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id),'confirm'=>'Are you sure you want to delete this item?')),
 );
 ?>
 
-<h1>View Category #<?php echo $model->id; ?></h1>
+<h1>Просмотр Категории #<?php echo $model->id; ?></h1>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,
 	'attributes'=>array(
 		'id',
-		'parent_id',
+                array(
+                    'name' => 'parent_id',
+                    'value' => ($model->parent_id == 0) ? "-" : $model->findByPk($model->parent_id)->title,
+                ),
 		'title',
 		'url',
 		'full_url',
-		'content',
+		'content:html',
 		'title_menu',
 		'meta_title',
 		'meta_keywords',
 		'meta_desc',
-		'created',
+                array(
+                    'name' => 'created',
+                    'value' => date("j.m.Y G:i:s", $model->created),
+                ),
 		'sort',
-		'status',
+                array(
+                    'name' => 'status',
+                    'value' => ($model->status == 1) ? "Да" : "Нет",
+                ),
 	),
 )); ?>

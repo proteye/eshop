@@ -3,19 +3,18 @@
 /* @var $model Category */
 
 $this->breadcrumbs=array(
-	'Categories'=>array('index'),
+	'Категории'=>array('index'),
 	$model->title=>array('view','id'=>$model->id),
-	'Update',
+	'Изменить',
 );
 
 $this->menu=array(
-	array('label'=>'List Category', 'url'=>array('index')),
-	array('label'=>'Create Category', 'url'=>array('create')),
-	array('label'=>'View Category', 'url'=>array('view', 'id'=>$model->id)),
-	array('label'=>'Manage Category', 'url'=>array('admin')),
+	array('label'=>'Список Категорий', 'url'=>array('index')),
+	array('label'=>'Добавить Категорию', 'url'=>array('create')),
+	array('label'=>'Просмотр Категории', 'url'=>array('view', 'id'=>$model->id)),
 );
 ?>
 
-<h1>Update Category <?php echo $model->id; ?></h1>
+<h1>Изменить Категорию #<?php echo $model->id; ?></h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

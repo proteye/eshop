@@ -38,8 +38,8 @@
 	<?php echo CHtml::encode($data->price); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('image_url')); ?>:</b>
-	<?php echo CHtml::encode($data->image_url); ?>
+	<b><?php echo CHtml::encode($data->getAttributeLabel('image_id')); ?>:</b>
+	<?php echo CHtml::encode($data->image_id); ?>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('count')); ?>:</b>
