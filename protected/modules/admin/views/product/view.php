@@ -11,7 +11,7 @@ $this->menu=array(
 	array('label'=>'Список Товаров', 'url'=>array('index')),
 	array('label'=>'Добавить Товар', 'url'=>array('create')),
 	array('label'=>'Изменить Товар', 'url'=>array('update', 'id'=>$model->id)),
-	array('label'=>'Удалить Товар', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id),'confirm'=>'Are you sure you want to delete this item?')),
+	array('label'=>'Удалить Товар', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id),'confirm'=>'Вы уверены, что хотите удалить данный элемент?')),
 );
 ?>
 
@@ -52,8 +52,14 @@ $this->menu=array(
 		'meta_keywords',
 		'meta_desc',
 		'old_price',
-		'recommended',
-		'novelty',
+                array(
+                    'name' => 'recommended',
+                    'value' => ($model->recommended == 1) ? "Да" : "Нет",
+                ),
+                array(
+                    'name' => 'novelty',
+                    'value' => ($model->novelty == 1) ? "Да" : "Нет",
+                ),
                 array(
                     'name' => 'status',
                     'value' => ($model->status == 1) ? "Да" : "Нет",

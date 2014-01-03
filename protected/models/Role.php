@@ -93,4 +93,9 @@ class Role extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+        
+        public static function getRoles()
+        {
+            return CHtml::listData(Role::model()->findAll(), 'id', 'description');
+        }
 }

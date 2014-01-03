@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50525
 File Encoding         : 65001
 
-Date: 2013-12-24 23:02:39
+Date: 2013-12-30 00:49:31
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -68,6 +68,24 @@ CREATE TABLE `esp_discount` (
 
 -- ----------------------------
 -- Records of esp_discount
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `esp_image`
+-- ----------------------------
+DROP TABLE IF EXISTS `esp_image`;
+CREATE TABLE `esp_image` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `product_id` int(11) DEFAULT NULL,
+  `name` varchar(255) DEFAULT NULL,
+  `title` varchar(255) DEFAULT NULL,
+  `mime` varchar(255) DEFAULT NULL,
+  `created` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of esp_image
 -- ----------------------------
 
 -- ----------------------------
@@ -169,8 +187,9 @@ CREATE TABLE `esp_product` (
   `description` text,
   `article` varchar(255) DEFAULT NULL,
   `price` float DEFAULT NULL,
-  `image_url` varchar(255) DEFAULT NULL,
+  `image_id` int(11) DEFAULT NULL,
   `count` int(11) DEFAULT '-1',
+  `created` int(11) DEFAULT NULL,
   `meta_title` varchar(255) DEFAULT NULL,
   `meta_keywords` varchar(255) DEFAULT NULL,
   `meta_desc` varchar(255) DEFAULT NULL,
@@ -194,11 +213,15 @@ CREATE TABLE `esp_role` (
   `name` varchar(255) DEFAULT NULL,
   `description` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of esp_role
 -- ----------------------------
+INSERT INTO `esp_role` VALUES ('1', 'admin', 'Полные права');
+INSERT INTO `esp_role` VALUES ('2', 'moderator', 'Права модератора');
+INSERT INTO `esp_role` VALUES ('3', 'user', 'Ограниченные права');
+INSERT INTO `esp_role` VALUES ('4', 'banned', 'Пользователь в черном списке');
 
 -- ----------------------------
 -- Table structure for `esp_setting`
@@ -229,8 +252,10 @@ CREATE TABLE `esp_user` (
   `created` int(11) DEFAULT NULL,
   `status` tinyint(1) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of esp_user
 -- ----------------------------
+INSERT INTO `esp_user` VALUES ('1', 'admin', '5061bcfc54acc10619e4544816e820dc', '1', 'Administrator', 'admin@eshop.ru', '', '', '1388088667', '1');
+INSERT INTO `esp_user` VALUES ('2', 'demo', '76feb7ec319252505d1a48b262e95555', '2', 'Demo user', 'demo@eshop.ru', '', '', '1388088686', '1');

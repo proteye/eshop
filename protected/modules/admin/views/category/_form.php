@@ -38,6 +38,12 @@
 	</div>
 
 	<div class="row">
+		<?php echo $form->labelEx($model,'title_menu'); ?>
+		<?php echo $form->textField($model,'title_menu',array('size'=>60,'maxlength'=>255)); ?>
+		<?php echo $form->error($model,'title_menu'); ?>
+	</div>
+
+	<div class="row">
 		<?php echo $form->labelEx($model,'content'); ?>
                 <?php $this->widget('application.extensions.ckeditor.CKEditor', array(
                     'model'=>$model,
@@ -46,12 +52,6 @@
                     'editorTemplate'=>'full',
                     )); ?>
 		<?php echo $form->error($model,'content'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'title_menu'); ?>
-		<?php echo $form->textField($model,'title_menu',array('size'=>60,'maxlength'=>255)); ?>
-		<?php echo $form->error($model,'title_menu'); ?>
 	</div>
 
 	<div class="row">

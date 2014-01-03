@@ -11,7 +11,7 @@ $this->menu=array(
 	array('label'=>'Список Категорий', 'url'=>array('index')),
 	array('label'=>'Добавить Категорию', 'url'=>array('create')),
 	array('label'=>'Изменить Категорию', 'url'=>array('update', 'id'=>$model->id)),
-	array('label'=>'Удалить Категорию', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id),'confirm'=>'Are you sure you want to delete this item?')),
+	array('label'=>'Удалить Категорию', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id),'confirm'=>'Вы уверены, что хотите удалить данный элемент?')),
 );
 ?>
 

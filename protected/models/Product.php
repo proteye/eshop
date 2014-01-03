@@ -96,7 +96,7 @@ class Product extends CActiveRecord
 			'article' => 'Артикул',
 			'price' => 'Цена',
 			'image_id' => 'Главное изображения',
-			'count' => 'Количество',
+			'count' => 'Количество на складе',
                         'created' => 'Дата создания',
 			'meta_title' => 'Meta Title',
 			'meta_keywords' => 'Meta Keywords',

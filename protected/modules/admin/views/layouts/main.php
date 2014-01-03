@@ -29,7 +29,7 @@
 	<div id="mainmenu">
 		<?php $this->widget('zii.widgets.CMenu',array(
 			'items'=>array(
-				array('label'=>'Главная', 'url'=>array('/site')),
+				array('label'=>CHtml::encode(Yii::app()->name), 'url'=>array('/site')),
 				array('label'=>'Категории', 'url'=>array('/admin/category'), 'active'=>('admin/category' === Yii::app()->request->pathInfo)),
 				array('label'=>'Товары', 'url'=>array('/admin/product'), 'active'=>('admin/product' === Yii::app()->request->pathInfo)),
                                 array('label'=>'Страницы', 'url'=>array('/admin/page'), 'active'=>('admin/page' === Yii::app()->request->pathInfo)),

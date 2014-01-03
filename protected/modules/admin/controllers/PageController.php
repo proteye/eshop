@@ -69,6 +69,9 @@ class PageController extends Controller
 	 */
 	public function actionCreate()
 	{
+                // Формируем список Страниц для выпадающего списка.
+                Page::listPage(Page::model()->make_tree(), 0, true);
+                
 		$model=new Page;
 
 		// Uncomment the following line if AJAX validation is needed
@@ -78,7 +81,7 @@ class PageController extends Controller
 		{
 			$model->attributes=$_POST['Page'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
+				$this->redirect(array('index'));
 		}
 
 		$this->render('create',array(
@@ -93,6 +96,9 @@ class PageController extends Controller
 	 */
 	public function actionUpdate($id)
 	{
+                // Формируем список Страниц для выпадающего списка.
+                Page::listPage(Page::model()->make_tree(), 0, true);
+                
 		$model=$this->loadModel($id);
 
 		// Uncomment the following line if AJAX validation is needed
@@ -102,7 +108,7 @@ class PageController extends Controller
 		{
 			$model->attributes=$_POST['Page'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
+				$this->redirect(array('index'));
 		}
 
 		$this->render('update',array(
@@ -121,12 +127,13 @@ class PageController extends Controller
 
 		// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
 		if(!isset($_GET['ajax']))
-			$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
+			$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('index'));
 	}
 
 	/**
 	 * Lists all models.
 	 */
+        /*
 	public function actionIndex()
 	{
 		$dataProvider=new CActiveDataProvider('Page');
@@ -134,18 +141,19 @@ class PageController extends Controller
 			'dataProvider'=>$dataProvider,
 		));
 	}
-
+        */
+        
 	/**
 	 * Manages all models.
 	 */
-	public function actionAdmin()
+	public function actionIndex()
 	{
 		$model=new Page('search');
 		$model->unsetAttributes();  // clear any default values
 		if(isset($_GET['Page']))
 			$model->attributes=$_GET['Page'];
 
-		$this->render('admin',array(
+		$this->render('index',array(
 			'model'=>$model,
 		));
 	}
@@ -161,7 +169,7 @@ class PageController extends Controller
 	{
 		$model=Page::model()->findByPk($id);
 		if($model===null)
-			throw new CHttpException(404,'The requested page does not exist.');
+			throw new CHttpException(404,'Запрошенная вами страница не найдена.');
 		return $model;
 	}
 

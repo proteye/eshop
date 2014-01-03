@@ -17,11 +17,24 @@
  */
 class User extends CActiveRecord
 {
+        const YES = 1;
+        const NO = 0;
         const SALT = 'ad5lu9$er@7h';
         const ROLE_ADMIN = 'admin';
         const ROLE_MODER = 'moderator';
         const ROLE_USER = 'user';
         const ROLE_BANNED = 'banned';
+        public $confirm_password;
+        
+        public function init()
+        {
+            parent::init();
+            // Устанавливаем "Отображать?" при создании Категории по умолчанию "ДА".
+            if ($this->isNewRecord) {
+                $this->status = self::YES;
+                $this->role_id = 3;
+            }
+        }
         
 	/**
 	 * @return string the associated database table name
@@ -41,6 +54,9 @@ class User extends CActiveRecord
 		return array(
 			array('role_id, created, status', 'numerical', 'integerOnly'=>true),
 			array('login, password, name, email, phone', 'length', 'max'=>255),
+                        array('login', 'required'),
+			array('password', 'required', 'on'=>'insert, change_password'),
+                        array('confirm_password', 'compare', 'operator'=>'==', 'compareAttribute'=>'password', 'on'=>'insert, change_password'),
 			array('address', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
@@ -67,15 +83,16 @@ class User extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'login' => 'Login',
-			'password' => 'Password',
-			'role_id' => 'Role',
-			'name' => 'Name',
+			'login' => 'Логин',
+			'password' => 'Пароль',
+                        'confirm_password' => 'Подтвреждение пароля',
+			'role_id' => 'Роль',
+			'name' => 'Имя',
 			'email' => 'Email',
-			'phone' => 'Phone',
-			'address' => 'Address',
-			'created' => 'Created',
-			'status' => 'Status',
+			'phone' => 'Телефон',
+			'address' => 'Адрес',
+			'created' => 'Дата создания',
+			'status' => 'Включен?',
 		);
 	}
 
@@ -130,7 +147,8 @@ class User extends CActiveRecord
                     $this->created = time();
                 }
                 
-                $this->password = md5(SALT . $this->password);
+                if (isset($this->password))
+                    $this->password = md5(SALT . $this->password);
                 
                 return parent::beforeSave();
         }

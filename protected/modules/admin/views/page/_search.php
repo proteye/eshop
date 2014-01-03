@@ -37,13 +37,13 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'content'); ?>
-		<?php echo $form->textArea($model,'content',array('rows'=>6, 'cols'=>50)); ?>
+		<?php echo $form->label($model,'title_menu'); ?>
+		<?php echo $form->textField($model,'title_menu',array('size'=>60,'maxlength'=>255)); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'title_menu'); ?>
-		<?php echo $form->textField($model,'title_menu',array('size'=>60,'maxlength'=>255)); ?>
+		<?php echo $form->label($model,'content'); ?>
+		<?php echo $form->textArea($model,'content',array('rows'=>6, 'cols'=>50)); ?>
 	</div>
 
 	<div class="row">
@@ -62,18 +62,8 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'created'); ?>
-		<?php echo $form->textField($model,'created'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->label($model,'sort'); ?>
-		<?php echo $form->textField($model,'sort'); ?>
-	</div>
-
-	<div class="row">
 		<?php echo $form->label($model,'status'); ?>
-		<?php echo $form->textField($model,'status'); ?>
+		<?php echo $form->dropDownList($model,'status',array('0'=>'Нет', '1'=>'Да')); ?>
 	</div>
 
 	<div class="row buttons">

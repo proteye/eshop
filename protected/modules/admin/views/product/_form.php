@@ -52,6 +52,7 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'count'); ?>
+            <b>-1</b> - <i>означает неограниченное количество на складе</i><br/>
 		<?php echo $form->textField($model,'count'); ?>
 		<?php echo $form->error($model,'count'); ?>
 	</div>

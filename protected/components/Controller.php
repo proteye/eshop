@@ -20,4 +20,15 @@ class Controller extends CController
 	 * for more details on how to specify this property.
 	 */
 	public $breadcrumbs=array();
+        /**
+         * Содержимое корзины.
+         */
+        public $cart;
+        
+        public function init() {
+            parent::init();
+            // Содержимое корзины.
+            $c = Yii::app()->createController('cart');
+            $this->cart = $c[0]->getCart();
+        }
 }

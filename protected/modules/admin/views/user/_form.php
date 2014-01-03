@@ -15,7 +15,7 @@
 	'enableAjaxValidation'=>false,
 )); ?>
 
-	<p class="note">Fields with <span class="required">*</span> are required.</p>
+	<p class="note">Поля с <span class="required">*</span> являются обязательными.</p>
 
 	<?php echo $form->errorSummary($model); ?>
 
@@ -24,16 +24,23 @@
 		<?php echo $form->textField($model,'login',array('size'=>60,'maxlength'=>255)); ?>
 		<?php echo $form->error($model,'login'); ?>
 	</div>
-
+        
+        <?php if ($model->isNewRecord): ?>
 	<div class="row">
 		<?php echo $form->labelEx($model,'password'); ?>
 		<?php echo $form->passwordField($model,'password',array('size'=>60,'maxlength'=>255)); ?>
 		<?php echo $form->error($model,'password'); ?>
 	</div>
+	<div class="row">
+		<?php echo $form->labelEx($model,'confirm_password'); ?>
+		<?php echo $form->passwordField($model,'confirm_password',array('size'=>60,'maxlength'=>255)); ?>
+		<?php echo $form->error($model,'confirm_password'); ?>
+	</div>
+        <?php endif; ?>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'role_id'); ?>
-		<?php echo $form->textField($model,'role_id'); ?>
+		<?php echo $form->dropDownList($model,'role_id',Role::getRoles()); ?>
 		<?php echo $form->error($model,'role_id'); ?>
 	</div>
 
@@ -62,19 +69,13 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'created'); ?>
-		<?php echo $form->textField($model,'created'); ?>
-		<?php echo $form->error($model,'created'); ?>
-	</div>
-
-	<div class="row">
 		<?php echo $form->labelEx($model,'status'); ?>
-		<?php echo $form->textField($model,'status'); ?>
+		<?php echo $form->dropDownList($model,'status',array('0'=>'Нет', '1'=>'Да')); ?>
 		<?php echo $form->error($model,'status'); ?>
 	</div>
 
 	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
+		<?php echo CHtml::submitButton($model->isNewRecord ? 'Добавить' : 'Сохранить'); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

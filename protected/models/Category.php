@@ -166,7 +166,7 @@ class Category extends CActiveRecord
         public function make_full_url()
         {
             if ($this->parent_id == 0)
-                return $this->url;
+                return 'catalog/' . $this->url;
             
             return self::model()->findByPk($this->parent_id)->full_url . '/' . $this->url;
         }

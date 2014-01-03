@@ -3,16 +3,15 @@
 /* @var $model Page */
 
 $this->breadcrumbs=array(
-	'Pages'=>array('index'),
+	'Страницы'=>array('index'),
 	$model->title,
 );
 
 $this->menu=array(
-	array('label'=>'List Page', 'url'=>array('index')),
-	array('label'=>'Create Page', 'url'=>array('create')),
-	array('label'=>'Update Page', 'url'=>array('update', 'id'=>$model->id)),
-	array('label'=>'Delete Page', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Manage Page', 'url'=>array('admin')),
+	array('label'=>'Список страниц', 'url'=>array('index')),
+	array('label'=>'Добавить страницу', 'url'=>array('create')),
+	array('label'=>'Изменить страницу', 'url'=>array('update', 'id'=>$model->id)),
+	array('label'=>'Удалить страницу', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id),'confirm'=>'Вы уверены, что хотите удалить данный элемент?')),
 );
 ?>
 
@@ -22,17 +21,26 @@ $this->menu=array(
 	'data'=>$model,
 	'attributes'=>array(
 		'id',
-		'parent_id',
+                array(
+                    'name' => 'parent_id',
+                    'value' => ($model->parent_id == 0) ? "-" : $model->findByPk($model->parent_id)->title,
+                ),
 		'title',
 		'url',
 		'full_url',
-		'content',
 		'title_menu',
+		'content:html',
 		'meta_title',
 		'meta_keywords',
 		'meta_desc',
-		'created',
+                array(
+                    'name' => 'created',
+                    'value' => date("j.m.Y G:i:s", $model->created),
+                ),
 		'sort',
-		'status',
+                array(
+                    'name' => 'status',
+                    'value' => ($model->status == 1) ? "Да" : "Нет",
+                ),
 	),
 )); ?>

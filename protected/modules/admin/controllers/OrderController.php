@@ -1,14 +1,7 @@
 <?php
 
-class UserController extends Controller
+class OrderController extends Controller
 {
-        public function beforeAction($action) {
-            if (!Yii::app()->user->checkAccess('admin'))
-                throw new CHttpException(404,'Указанная страница не найдена');
-            
-            return parent::beforeAction($action);
-        }
-
 	/**
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
 	 * using two-column layout. See 'protected/views/layouts/column2.php'.
@@ -36,15 +29,15 @@ class UserController extends Controller
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
 				'actions'=>array('index','view'),
-				'users'=>array('@'),
+				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update', 'password'),
-				'roles'=>array('admin'),
+				'actions'=>array('create','update'),
+				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
 				'actions'=>array('admin','delete'),
-				'roles'=>array('admin'),
+				'users'=>array('admin'),
 			),
 			array('deny',  // deny all users
 				'users'=>array('*'),
@@ -69,16 +62,16 @@ class UserController extends Controller
 	 */
 	public function actionCreate()
 	{
-		$model=new User;
+		$model=new Order;
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['User']))
+		if(isset($_POST['Order']))
 		{
-			$model->attributes=$_POST['User'];
+			$model->attributes=$_POST['Order'];
 			if($model->save())
-				$this->redirect(array('index'));
+				$this->redirect(array('view','id'=>$model->id));
 		}
 
 		$this->render('create',array(
@@ -98,12 +91,11 @@ class UserController extends Controller
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['User']))
+		if(isset($_POST['Order']))
 		{
-			$model->attributes=$_POST['User'];
-                        unset($model->password); // удаляем поле password, чтобы пароль не был изменен при сохранении.
+			$model->attributes=$_POST['Order'];
 			if($model->save())
-				$this->redirect(array('index'));
+				$this->redirect(array('view','id'=>$model->id));
 		}
 
 		$this->render('update',array(
@@ -122,53 +114,31 @@ class UserController extends Controller
 
 		// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
 		if(!isset($_GET['ajax']))
-			$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('index'));
+			$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
 	}
 
-	/**
-	 * Изменить пароль пользователя.
-	 */
-	public function actionPassword($id)
-	{
-		$model = $this->loadModel($id);
-                $model->scenario = 'change_password';
-		if(isset($_POST['User']))
-		{
-			$model->password=$_POST['User']['password'];
-                        $model->confirm_password=$_POST['User']['confirm_password'];
-			if($model->save())
-                            $this->redirect(isset($_GET['returnUrl']) ? $_GET['returnUrl'] : array('index'));
-		}
-
-		$this->render('password',array(
-                    'model'=>$model,
-		));
-	}
-        
 	/**
 	 * Lists all models.
 	 */
-        /*
 	public function actionIndex()
 	{
-		$dataProvider=new CActiveDataProvider('User');
+		$dataProvider=new CActiveDataProvider('Order');
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
 		));
 	}
-        */
 
 	/**
 	 * Manages all models.
 	 */
-	public function actionIndex()
+	public function actionAdmin()
 	{
-		$model=new User('search');
+		$model=new Order('search');
 		$model->unsetAttributes();  // clear any default values
-		if(isset($_GET['User']))
-			$model->attributes=$_GET['User'];
+		if(isset($_GET['Order']))
+			$model->attributes=$_GET['Order'];
 
-		$this->render('index',array(
+		$this->render('admin',array(
 			'model'=>$model,
 		));
 	}
@@ -177,12 +147,12 @@ class UserController extends Controller
 	 * Returns the data model based on the primary key given in the GET variable.
 	 * If the data model is not found, an HTTP exception will be raised.
 	 * @param integer $id the ID of the model to be loaded
-	 * @return User the loaded model
+	 * @return Order the loaded model
 	 * @throws CHttpException
 	 */
 	public function loadModel($id)
 	{
-		$model=User::model()->findByPk($id);
+		$model=Order::model()->findByPk($id);
 		if($model===null)
 			throw new CHttpException(404,'The requested page does not exist.');
 		return $model;
@@ -190,11 +160,11 @@ class UserController extends Controller
 
 	/**
 	 * Performs the AJAX validation.
-	 * @param User $model the model to be validated
+	 * @param Order $model the model to be validated
 	 */
 	protected function performAjaxValidation($model)
 	{
-		if(isset($_POST['ajax']) && $_POST['ajax']==='user-form')
+		if(isset($_POST['ajax']) && $_POST['ajax']==='order-form')
 		{
 			echo CActiveForm::validate($model);
 			Yii::app()->end();

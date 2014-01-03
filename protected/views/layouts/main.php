@@ -44,6 +44,9 @@
 			'links'=>$this->breadcrumbs,
 		)); ?><!-- breadcrumbs -->
 	<?php endif?>
+        <div id="cart-widget">
+            <?php $this->widget('ext.cart.ECartWidget'); ?>
+        </div>
 
 	<?php echo $content; ?>
 

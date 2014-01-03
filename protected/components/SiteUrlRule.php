@@ -23,19 +23,23 @@ class SiteUrlRule extends CBaseUrlRule
         }
         */
         
-        // Это продукт?
-        if ($url = Product::model()->findByAttributes(array('full_url' => $pathInfo)))
+        // Продукт или Категория товаров.
+        if (strpos($pathInfo, 'catalog') !== FALSE)
         {
-            $_GET['catg'] = 'product';
-            $_GET['id'] = $url->getPrimaryKey();
-            return 'site/categ';
-        }
-        // Или это категория товаров?
-        elseif ($url = Category::model()->findByAttributes(array('full_url' => $pathInfo)))
-        {
-            $_GET['catg'] = 'category';
-            $_GET['id'] = $url->getPrimaryKey();
-            return 'site/categ';
+            // Это продукт?
+            if ($url = Product::model()->findByAttributes(array('full_url' => $pathInfo)))
+            {
+                $_GET['catg'] = 'product';
+                $_GET['id'] = $url->getPrimaryKey();
+                return 'site/categ';
+            }
+            // Или это категория товаров?
+            elseif ($url = Category::model()->findByAttributes(array('full_url' => $pathInfo)))
+            {
+                $_GET['catg'] = 'category';
+                $_GET['id'] = $url->getPrimaryKey();
+                return 'site/categ';
+            }
         }
         // Или это статичная страница?
         elseif ($url = Page::model()->findByAttributes(array('full_url' => $pathInfo)))
