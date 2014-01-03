@@ -41,6 +41,7 @@ $this->breadcrumbs=array(
         </tr>
     </tfoot>
 </table>
+<?= CHtml::link('Оформить заказ', array('order/add')); ?>
 <?php else: ?>
 В корзине нет товаров.
 <?php endif; ?>

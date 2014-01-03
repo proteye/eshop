@@ -25,6 +25,13 @@
  */
 class Order extends CActiveRecord
 {
+        public $status_id = 1; // соответствует "В обработке" в БД.
+        public $payment_id = 1; // соответствует "Наличными" в БД.
+        public $delivery_id = 1; // соответствует "Самовывоз" в БД.
+        public $delivery_cost = 0; // по умолчанию сумма доставки = 0.
+        public $confirm = 0; // по умолчанию заказ не подтвержден.
+        public $paid = 0; // по умолчанию заказ не оплачен.
+        
 	/**
 	 * @return string the associated database table name
 	 */
@@ -44,6 +51,7 @@ class Order extends CActiveRecord
 			array('user_id, delivery_id, payment_id, status_id, created, closing_date, confirm, paid', 'numerical', 'integerOnly'=>true),
 			array('summ, delivery_cost', 'numerical'),
 			array('name, email, phone, address, legal_info', 'length', 'max'=>255),
+                        array('name, email', 'required'),
 			array('order_content, comment', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
@@ -59,6 +67,10 @@ class Order extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
+                    'delivery' => array(self::BELONGS_TO, 'Delivery', 'delivery_id'),
+                    'payment' => array(self::BELONGS_TO, 'Payment', 'payment_id'),
+                    'status' => array(self::BELONGS_TO, 'OrderStatus', 'status_id'),
+                    'user' => array(self::BELONGS_TO, 'User', 'user_id'),
 		);
 	}
 
@@ -141,4 +153,64 @@ class Order extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+        
+        // Действия перед сохранением.
+        protected function beforeSave()
+        {
+            // Если это Новый заказ.
+            if ($this->isNewRecord) {
+                $cont_summ = $this->content_summ();
+                $this->order_content = $cont_summ['content']; // содержимое корзины.
+                $this->summ = $cont_summ['summ']; // сумма заказа.
+                $this->created = time(); // дата создания.
+                $this->user_id = Yii::app()->user->id ? Yii::app()->user->id : 0; // ID пользователя.
+            }
+
+            return parent::beforeSave();
+        }
+        
+         /**
+         * Функция, которая возвращает массив.
+         * [content] - содержимое корзины в виде строки для занесения в БД.
+         * [summ] - сумма.
+         */
+        protected function content_summ()
+        {
+            // Открываем сессию.
+            $session=new CHttpSession;
+            $session->open();
+            
+            // Вытаскиваем значение массива order из сессии в переменную $order.
+            $order = $session['order'];
+            $session->close();
+            
+            $arr = array();
+            foreach($order as $k => $p) {
+                $product = Product::model()->findByPk($k);
+                $title = $product->title;
+                $url = Yii::app()->request->hostInfo . '/' . $product->full_url;
+                $price = $product->price;
+                $arr['content'] .= $title . '::' . $price . '::' . $p['count'] . '::' . $url . ';;';
+                $arr['summ'] += $price * $p['count'];
+            }
+            $arr['content'] = substr($arr['content'], 0, -2);
+            
+            return $arr;
+        }
+        
+         /**
+         * Очистка корзины.
+         */
+        public function cart_clear()
+        {
+            // Открываем сессию.
+            $session=new CHttpSession;
+            $session->open();
+            
+            unset($session['order']);
+            unset($session['cart']);
+            $session->close();
+            
+            return true;
+        }
 }

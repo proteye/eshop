@@ -78,6 +78,7 @@ class CartController extends Controller
                 }
                 $model['order'] = $arr;
                 $model['cart'] = $session['cart'];
+                
                 $this->render('index', array(
                     'title' => $this->title,
                     'model' => $model,

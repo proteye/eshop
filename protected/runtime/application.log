@@ -12099,3 +12099,223 @@ Stack trace:
 REQUEST_URI=/dostavka
 in Z:\home\eshop\www\protected\controllers\SiteController.php (52)
 in Z:\home\eshop\www\index.php (13)
+2014/01/04 00:08:39 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "CartController.baseUrl".' in Z:\home\eshop\framework\base\CComponent.php:130
+Stack trace:
+#0 Z:\home\eshop\www\protected\controllers\CartController.php(82): CComponent->__get('baseUrl')
+#1 Z:\home\eshop\framework\web\actions\CInlineAction.php(49): CartController->actionIndex()
+#2 Z:\home\eshop\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 Z:\home\eshop\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#4 Z:\home\eshop\framework\web\CController.php(291): CFilterChain->run()
+#5 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('')
+#7 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('cart')
+#8 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 Z:\home\eshop\www\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/cart
+HTTP_REFERER=http://eshop/order/add
+---
+2014/01/04 00:09:34 [error] [exception.CException] exception 'CException' with message 'В классе CWebApplication и его поведениях не найден метод или замыкание с именем "baseUrl".' in Z:\home\eshop\framework\base\CComponent.php:266
+Stack trace:
+#0 Z:\home\eshop\www\protected\controllers\CartController.php(82): CComponent->__call('baseUrl', Array)
+#1 Z:\home\eshop\www\protected\controllers\CartController.php(82): CWebApplication->baseUrl(true)
+#2 Z:\home\eshop\framework\web\actions\CInlineAction.php(49): CartController->actionIndex()
+#3 Z:\home\eshop\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 Z:\home\eshop\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 Z:\home\eshop\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('')
+#8 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('cart')
+#9 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\eshop\www\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/cart
+HTTP_REFERER=http://eshop/order/add
+---
+2014/01/04 00:11:40 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "CartController._baseUrl".' in Z:\home\eshop\framework\base\CComponent.php:130
+Stack trace:
+#0 Z:\home\eshop\framework\web\CHttpRequest.php(363): CComponent->__get('_baseUrl')
+#1 Z:\home\eshop\www\protected\controllers\CartController.php(82): CHttpRequest->getBaseUrl()
+#2 Z:\home\eshop\framework\web\actions\CInlineAction.php(49): CartController->actionIndex()
+#3 Z:\home\eshop\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 Z:\home\eshop\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 Z:\home\eshop\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('')
+#8 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('cart')
+#9 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\eshop\www\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/cart
+HTTP_REFERER=http://eshop/order/add
+---
+2014/01/04 00:13:19 [error] [php] Object of class CHttpRequest could not be converted to string (Z:\home\eshop\www\protected\controllers\CartController.php:82)
+Stack trace:
+#0 Z:\home\eshop\framework\web\filters\CFilterChain.php(133): CartController->runAction()
+#1 Z:\home\eshop\framework\web\CController.php(291): CFilterChain->run()
+#2 Z:\home\eshop\framework\web\CController.php(265): CartController->runActionWithFilters()
+#3 Z:\home\eshop\framework\web\CWebApplication.php(282): CartController->run()
+#4 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 Z:\home\eshop\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/cart
+in Z:\home\eshop\www\protected\controllers\CartController.php (82)
+in Z:\home\eshop\www\index.php (13)
+2014/01/04 00:13:30 [error] [php] Object of class CHttpRequest could not be converted to string (Z:\home\eshop\www\protected\controllers\CartController.php:82)
+Stack trace:
+#0 Z:\home\eshop\framework\web\filters\CFilterChain.php(133): CartController->runAction()
+#1 Z:\home\eshop\framework\web\CController.php(291): CFilterChain->run()
+#2 Z:\home\eshop\framework\web\CController.php(265): CartController->runActionWithFilters()
+#3 Z:\home\eshop\framework\web\CWebApplication.php(282): CartController->run()
+#4 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 Z:\home\eshop\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/cart
+in Z:\home\eshop\www\protected\controllers\CartController.php (82)
+in Z:\home\eshop\www\index.php (13)
+2014/01/04 00:24:36 [error] [exception.CException] exception 'CException' with message 'В классе Order и его поведениях не найден метод или замыкание с именем "order_content".' in Z:\home\eshop\framework\base\CComponent.php:266
+Stack trace:
+#0 Z:\home\eshop\framework\db\ar\CActiveRecord.php(227): CComponent->__call('order_content', Array)
+#1 Z:\home\eshop\www\protected\controllers\OrderController.php(16): CActiveRecord->__call('order_content', Array)
+#2 Z:\home\eshop\www\protected\controllers\OrderController.php(16): Order->order_content()
+#3 Z:\home\eshop\framework\web\actions\CInlineAction.php(49): OrderController->actionAdd()
+#4 Z:\home\eshop\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 Z:\home\eshop\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('add')
+#8 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('order/add')
+#9 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\eshop\www\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/order/add
+HTTP_REFERER=http://eshop/order/add
+---
+2014/01/04 00:52:41 [error] [exception.CException] exception 'CException' with message 'В классе Order и его поведениях не найден метод или замыкание с именем "content".' in Z:\home\eshop\framework\base\CComponent.php:266
+Stack trace:
+#0 Z:\home\eshop\framework\db\ar\CActiveRecord.php(227): CComponent->__call('content', Array)
+#1 Z:\home\eshop\www\protected\controllers\OrderController.php(16): CActiveRecord->__call('content', Array)
+#2 Z:\home\eshop\www\protected\controllers\OrderController.php(16): Order->content()
+#3 Z:\home\eshop\framework\web\actions\CInlineAction.php(49): OrderController->actionAdd()
+#4 Z:\home\eshop\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 Z:\home\eshop\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('add')
+#8 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('order/add')
+#9 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\eshop\www\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/order/add
+HTTP_REFERER=http://eshop/order/add
+---
+2014/01/04 01:10:20 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Некорректный запрос.' in Z:\home\eshop\framework\web\CController.php:336
+Stack trace:
+#0 Z:\home\eshop\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 Z:\home\eshop\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('')
+#4 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('order')
+#5 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 Z:\home\eshop\www\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/order
+---
+2014/01/04 01:10:29 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Некорректный запрос.' in Z:\home\eshop\framework\web\CController.php:336
+Stack trace:
+#0 Z:\home\eshop\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 Z:\home\eshop\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('')
+#4 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('order')
+#5 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 Z:\home\eshop\www\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/order
+HTTP_REFERER=http://eshop/order/add
+---
+2014/01/04 01:10:42 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Некорректный запрос.' in Z:\home\eshop\framework\web\CController.php:336
+Stack trace:
+#0 Z:\home\eshop\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 Z:\home\eshop\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('')
+#4 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('order')
+#5 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 Z:\home\eshop\www\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/order
+HTTP_REFERER=http://eshop/order/add
+---
+2014/01/04 01:10:46 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Некорректный запрос.' in Z:\home\eshop\framework\web\CController.php:336
+Stack trace:
+#0 Z:\home\eshop\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 Z:\home\eshop\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('')
+#4 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('order')
+#5 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 Z:\home\eshop\www\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/order
+HTTP_REFERER=http://eshop/order/add
+---
+2014/01/04 01:10:53 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Некорректный запрос.' in Z:\home\eshop\framework\web\CController.php:336
+Stack trace:
+#0 Z:\home\eshop\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 Z:\home\eshop\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('')
+#4 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('order')
+#5 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 Z:\home\eshop\www\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/order
+HTTP_REFERER=http://eshop/order/add
+---
+2014/01/04 01:10:54 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Некорректный запрос.' in Z:\home\eshop\framework\web\CController.php:336
+Stack trace:
+#0 Z:\home\eshop\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 Z:\home\eshop\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('')
+#4 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('order')
+#5 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 Z:\home\eshop\www\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/order
+HTTP_REFERER=http://eshop/order/add
+---
+2014/01/04 01:11:08 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Некорректный запрос.' in Z:\home\eshop\framework\web\CController.php:336
+Stack trace:
+#0 Z:\home\eshop\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 Z:\home\eshop\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('')
+#4 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('order')
+#5 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 Z:\home\eshop\www\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/order
+HTTP_REFERER=http://eshop/order/add
+---
+2014/01/04 01:11:16 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Некорректный запрос.' in Z:\home\eshop\framework\web\CController.php:336
+Stack trace:
+#0 Z:\home\eshop\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 Z:\home\eshop\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('index')
+#4 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('order/index')
+#5 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 Z:\home\eshop\www\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/order/index
+---
+2014/01/04 01:11:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "view".' in Z:\home\eshop\framework\web\CController.php:483
+Stack trace:
+#0 Z:\home\eshop\framework\web\CController.php(270): CController->missingAction('view')
+#1 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('view')
+#2 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('order/view')
+#3 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 Z:\home\eshop\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/order/1
+---
