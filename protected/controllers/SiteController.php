@@ -56,7 +56,9 @@ class SiteController extends Controller
         public function actionCatalog()
         {
             $this->pageTitle=Yii::app()->name . ' | Каталог';
-            $this->render('catalog');
+            $model = Product::model()->findAll('category_id = 0');
+            
+            $this->render('catalog', array('categories' => Category::make_tree(), 'products' => $model));
         }
         
 	/**

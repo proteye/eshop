@@ -11,6 +11,7 @@
  * @property string $full_url
  * @property string $content
  * @property string $title_menu
+ * @property string $image
  * @property string $meta_title
  * @property string $meta_keywords
  * @property string $meta_desc
@@ -54,6 +55,7 @@ class Category extends CActiveRecord
                         array('full_url', 'unique'),
 			array('parent_id, created, sort, status', 'numerical', 'integerOnly'=>true),
 			array('title, url, full_url, title_menu, meta_title, meta_keywords, meta_desc', 'length', 'max'=>255),
+                        array('image', 'file', 'types' => 'jpg|gif|png', 'allowEmpty' => true),
 			array('content', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
@@ -86,6 +88,7 @@ class Category extends CActiveRecord
 			'full_url' => 'Полный адрес URL',
 			'content' => 'Описание',
 			'title_menu' => 'Заголовок меню',
+                        'image' => 'Изображение',
 			'meta_title' => 'Meta Title',
 			'meta_keywords' => 'Meta Keywords',
 			'meta_desc' => 'Meta Description',
@@ -190,6 +193,10 @@ class Category extends CActiveRecord
                     Category::model()->tree[$page['id']] .= $page['label'];
                     Category::listCategory($page['items'], $shift + 2);
                 }
+            }
+            else
+            {
+                Category::model()->tree[0] = '-';
             }
 	}
         

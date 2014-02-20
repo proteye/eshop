@@ -61,7 +61,7 @@ class Product extends CActiveRecord
                         array('title, url, article', 'required'),
                         array('full_url', 'unique'),
 			array('description', 'safe'),
-                        array('images', 'file', 'types' => 'jpg|gif|png', 'allowEmpty' => true),
+                        array('images', 'file', 'types' => 'jpg, gif, png', 'allowEmpty' => true),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('id, category_id, title, url, full_url, description, article, price, image_id, count, meta_title, meta_keywords, meta_desc, old_price, recommended, novelty, status', 'safe', 'on'=>'search'),

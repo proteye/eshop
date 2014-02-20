@@ -12319,3 +12319,130 @@ Stack trace:
 #5 {main}
 REQUEST_URI=/order/1
 ---
+2014/01/09 23:20:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Указанная страница не найдена' in Z:\home\eshop\www\protected\modules\admin\controllers\DefaultController.php:7
+Stack trace:
+#0 Z:\home\eshop\framework\web\CController.php(306): DefaultController->beforeAction(Object(CInlineAction))
+#1 Z:\home\eshop\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('')
+#4 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('admin')
+#5 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 Z:\home\eshop\www\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/admin/
+---
+2014/02/01 18:53:06 [error] [php] Invalid argument supplied for foreach() (Z:\home\eshop\framework\web\helpers\CHtml.php:2325)
+Stack trace:
+#0 Z:\home\eshop\www\protected\modules\admin\views\category\_form.php(24): CActiveForm->dropDownList()
+#1 Z:\home\eshop\framework\web\CBaseController.php(126): require()
+#2 Z:\home\eshop\framework\web\CBaseController.php(95): CategoryController->renderInternal()
+#3 Z:\home\eshop\framework\web\CController.php(869): CategoryController->renderFile()
+#4 Z:\home\eshop\www\protected\modules\admin\views\category\create.php(17): CategoryController->renderPartial()
+#5 Z:\home\eshop\framework\web\CBaseController.php(126): require()
+#6 Z:\home\eshop\framework\web\CBaseController.php(95): CategoryController->renderInternal()
+#7 Z:\home\eshop\framework\web\CController.php(869): CategoryController->renderFile()
+#8 Z:\home\eshop\framework\web\CController.php(782): CategoryController->renderPartial()
+#9 Z:\home\eshop\www\protected\modules\admin\controllers\CategoryController.php(89): CategoryController->render()
+#10 Z:\home\eshop\framework\web\actions\CInlineAction.php(49): CategoryController->actionCreate()
+#11 Z:\home\eshop\framework\web\CController.php(308): CInlineAction->runWithParams()
+#12 Z:\home\eshop\framework\web\filters\CFilterChain.php(133): CategoryController->runAction()
+#13 Z:\home\eshop\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#14 Z:\home\eshop\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#15 Z:\home\eshop\framework\web\filters\CInlineFilter.php(58): CategoryController->filterAccessControl()
+#16 Z:\home\eshop\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#17 Z:\home\eshop\framework\web\CController.php(291): CFilterChain->run()
+#18 Z:\home\eshop\framework\web\CController.php(265): CategoryController->runActionWithFilters()
+#19 Z:\home\eshop\framework\web\CWebApplication.php(282): CategoryController->run()
+#20 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#21 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#22 Z:\home\eshop\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/category/create
+in Z:\home\eshop\www\protected\modules\admin\views\category\_form.php (24)
+in Z:\home\eshop\www\protected\modules\admin\views\category\create.php (17)
+in Z:\home\eshop\www\protected\modules\admin\controllers\CategoryController.php (89)
+2014/02/01 19:04:02 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'У вас недостаточно прав для выполнения указанного действия.' in Z:\home\eshop\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 Z:\home\eshop\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), '?? ?????? ?????...')
+#1 Z:\home\eshop\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 Z:\home\eshop\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 Z:\home\eshop\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 Z:\home\eshop\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 Z:\home\eshop\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/order/adm...')
+#9 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\eshop\www\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/order/admin
+HTTP_REFERER=http://eshop/admin/order/create
+---
+2014/02/01 19:04:23 [error] [php] Invalid argument supplied for foreach() (Z:\home\eshop\framework\web\helpers\CHtml.php:2325)
+Stack trace:
+#0 Z:\home\eshop\www\protected\modules\admin\views\category\_form.php(24): CActiveForm->dropDownList()
+#1 Z:\home\eshop\framework\web\CBaseController.php(126): require()
+#2 Z:\home\eshop\framework\web\CBaseController.php(95): CategoryController->renderInternal()
+#3 Z:\home\eshop\framework\web\CController.php(869): CategoryController->renderFile()
+#4 Z:\home\eshop\www\protected\modules\admin\views\category\create.php(17): CategoryController->renderPartial()
+#5 Z:\home\eshop\framework\web\CBaseController.php(126): require()
+#6 Z:\home\eshop\framework\web\CBaseController.php(95): CategoryController->renderInternal()
+#7 Z:\home\eshop\framework\web\CController.php(869): CategoryController->renderFile()
+#8 Z:\home\eshop\framework\web\CController.php(782): CategoryController->renderPartial()
+#9 Z:\home\eshop\www\protected\modules\admin\controllers\CategoryController.php(89): CategoryController->render()
+#10 Z:\home\eshop\framework\web\actions\CInlineAction.php(49): CategoryController->actionCreate()
+#11 Z:\home\eshop\framework\web\CController.php(308): CInlineAction->runWithParams()
+#12 Z:\home\eshop\framework\web\filters\CFilterChain.php(133): CategoryController->runAction()
+#13 Z:\home\eshop\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#14 Z:\home\eshop\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#15 Z:\home\eshop\framework\web\filters\CInlineFilter.php(58): CategoryController->filterAccessControl()
+#16 Z:\home\eshop\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#17 Z:\home\eshop\framework\web\CController.php(291): CFilterChain->run()
+#18 Z:\home\eshop\framework\web\CController.php(265): CategoryController->runActionWithFilters()
+#19 Z:\home\eshop\framework\web\CWebApplication.php(282): CategoryController->run()
+#20 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#21 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#22 Z:\home\eshop\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/category/create
+in Z:\home\eshop\www\protected\modules\admin\views\category\_form.php (24)
+in Z:\home\eshop\www\protected\modules\admin\views\category\create.php (17)
+in Z:\home\eshop\www\protected\modules\admin\controllers\CategoryController.php (89)
+2014/02/01 19:12:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/46cdb297/contents.css".' in Z:\home\eshop\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/46cdb297...')
+#1 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\eshop\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/46cdb297/contents.css
+---
+2014/02/01 19:12:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/46cdb297/contents.css".' in Z:\home\eshop\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/46cdb297...')
+#1 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\eshop\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/46cdb297/contents.css
+---
+2014/02/06 18:34:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Указанная страница не найдена' in Z:\home\eshop\www\protected\modules\admin\controllers\DefaultController.php:7
+Stack trace:
+#0 Z:\home\eshop\framework\web\CController.php(306): DefaultController->beforeAction(Object(CInlineAction))
+#1 Z:\home\eshop\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('')
+#4 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('admin')
+#5 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 Z:\home\eshop\www\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/admin/
+---
+2014/02/06 18:46:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Указанная страница не найдена' in Z:\home\eshop\www\protected\modules\admin\controllers\DefaultController.php:7
+Stack trace:
+#0 Z:\home\eshop\framework\web\CController.php(306): DefaultController->beforeAction(Object(CInlineAction))
+#1 Z:\home\eshop\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 Z:\home\eshop\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 Z:\home\eshop\framework\web\CWebApplication.php(282): CController->run('')
+#4 Z:\home\eshop\framework\web\CWebApplication.php(141): CWebApplication->runController('admin')
+#5 Z:\home\eshop\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 Z:\home\eshop\www\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/admin/
+---

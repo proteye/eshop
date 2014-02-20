@@ -55,6 +55,12 @@
 	</div>
 
 	<div class="row">
+		<?php echo $form->labelEx($model,'image'); ?>
+                <?php echo CHtml::activeFileField($model, 'image'); ?>
+                <?php echo $form->error($model,'image'); ?>
+	</div>
+        
+	<div class="row">
 		<?php echo $form->labelEx($model,'meta_title'); ?>
 		<?php echo $form->textField($model,'meta_title',array('size'=>60,'maxlength'=>255)); ?>
 		<?php echo $form->error($model,'meta_title'); ?>
